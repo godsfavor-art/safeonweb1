@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" prefix="og: https://ogp.me/ns#">
+
+<!-- Mirrored from atwork.safeonweb.be/fr/news/les-cyberastuces-du-ccb-comment-attenuer-les-risques-de-securite-pour-le-protocole-rdp-remote by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Aug 2025 15:28:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8" />
+<script type="text/plain" data-type="application/javascript" data-name="matomo">var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://stats.excom.fgov.be/" : "http://stats.excom.fgov.be/");_paq.push(["setSiteId", "602"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
+<link rel="canonical" href="les-cyberastuces-du-ccb-comment-attenuer-les-risques-de-securite-pour-le-protocole-rdp-remote.html" />
+<link rel="image_src" href="../../sites/default/files/styles/facebook_share/public/2024-05/cyber_at_work_1099f.jpg?itok=LCAG6Zcj,,/themes/custom/sow_work_theme/images/default-share-social.jpg" />
+<meta property="og:image:url" content="http://atwork.safeonweb.be/sites/default/files/styles/facebook_share/public/2024-05/cyber_at_work_1.jpg?itok=LCAG6Zcj" />
+<meta property="og:image:url" content="http://atwork.safeonweb.be/themes/custom/sow_work_theme/images/default-share-social.jpg" />
+<meta property="og:image:secure_url" content="https://atwork.safeonweb.be/sites/default/files/styles/facebook_share/public/2024-05/cyber_at_work_1.jpg?itok=LCAG6Zcj" />
+<meta property="og:image:secure_url" content="https://atwork.safeonweb.be/themes/custom/sow_work_theme/images/default-share-social.jpg" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="ImageToolbar" content="false" />
+<script type="application/ld+json">{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": "1",
+            "name": "Accueil",
+            "item": "http://atwork.safeonweb.be/fr"
+          },{
+            "@type": "ListItem",
+            "position": "2",
+            "name": "News",
+            "item": "http://atwork.safeonweb.be/fr/news"
+          },{
+            "@type": "ListItem",
+            "position": "3",
+            "name": "Les cyberastuces du CCB : Comment att&#233;nuer les risques de s&#233;curit&#233; pour le protocole RDP (Remote ...",
+            "item": "http://atwork.safeonweb.be/fr/news/les-cyberastuces-du-ccb-comment-attenuer-les-risques-de-securite-pour-le-protocole-rdp-remote"
+          }]}</script>
+<link rel="icon" href="../../themes/custom/sow_work_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="nl" href="../../nl/news/cybertips-van-het-ccb-hoe-beveiligingsrisicos-beperken-voor-het-remote-desktop-protocol-rdp.html" />
+<link rel="alternate" hreflang="fr" href="les-cyberastuces-du-ccb-comment-attenuer-les-risques-de-securite-pour-le-protocole-rdp-remote.html" />
+<link rel="alternate" hreflang="en" href="../../news/ccbs-cyber-tips-how-mitigate-security-risks-remote-desktop-protocol-rdp.html" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.icon_color = "white, #285f78";</script>
+
+    <title>Les cyberastuces du CCB : Comment att&#233;nuer les risques de s&#233;curit&#233; pour le protocole RDP (Remote Desktop Protocol) | CCB Safeonweb</title>
+    <link rel="stylesheet" media="all" href="../../sites/default/files/css/css_q_NViHzN47tLlR44I-whY_YaFhtP00oRqO2gpa8Ao2A70cd.css?delta=0&amp;language=fr&amp;theme=sow_work_theme&amp;include=eJxdjFEKxCAMBS8U9EglbtJWGo0kutI9_ULpUtif4TEMD4m6Yj0j3iOsprXDS40j2WgogTKKbnAImsaL0NBwM2y7_6LHhFHbSJJ9ZwLXuUy1Y-k7F46baEL5tz5zYwM_vXOJCZ3hnXl6vBiK0hCGz7C0rDoqYc9a768vnfxL4A" />
+<link rel="stylesheet" media="all" href="../../sites/default/files/css/css_H4erypUbmglST6_TKPz7gvVoYm_jwfzs8hDP_SJKzbQec2f.css?delta=1&amp;language=fr&amp;theme=sow_work_theme&amp;include=eJxdjFEKxCAMBS8U9EglbtJWGo0kutI9_ULpUtif4TEMD4m6Yj0j3iOsprXDS40j2WgogTKKbnAImsaL0NBwM2y7_6LHhFHbSJJ9ZwLXuUy1Y-k7F46baEL5tz5zYwM_vXOJCZ3hnXl6vBiK0hCGz7C0rDoqYc9a768vnfxL4A" />
+
+      <script src="../../libraries/klaro/dist/klaro-no-translations-no-css2981.js?t0m7c9" defer id="klaro-js"></script>
+
+        
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/titilliumweb/titilliumweb-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/titilliumweb/titilliumweb-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/titilliumweb/titilliumweb-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/iconfont/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+        
+</head>
+<body class="lang-fr section-fr path-node page-node-type-article logo--animated nav-shown">
+<a href="#main-content" class="visually-hidden focusable skip-link">
+  Skip to main content
+</a>
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+<div class="page-wrapper">
+  <div id="sticky-anchor"></div>
+
+      
+  <div class="big-header-wrapper" id="sticky">
+          <div class="top-header-wrapper">
+        <div class="top-header">
+          <div class="top-header-content">
+              <div>
+    <div class="language-switcher-language-url block-languageswitcher" id="block-languageswitcher" role="navigation">
+  
+  
+      <ul class="links"><li hreflang="nl" data-drupal-link-system-path="node/189" class="nl"><a href="../../nl/news/cybertips-van-het-ccb-hoe-beveiligingsrisicos-beperken-voor-het-remote-desktop-protocol-rdp.html" class="language-link" hreflang="nl" data-drupal-link-system-path="node/189">nl</a></li><li hreflang="fr" data-drupal-link-system-path="node/189" class="fr is-active" aria-current="page"><a href="les-cyberastuces-du-ccb-comment-attenuer-les-risques-de-securite-pour-le-protocole-rdp-remote.html" class="language-link is-active" hreflang="fr" data-drupal-link-system-path="node/189" aria-current="page">fr</a></li><li hreflang="de" data-drupal-link-system-path="node/189" class="de"><a href="../../de/node/189.html" class="language-link" hreflang="de" data-drupal-link-system-path="node/189">de</a></li><li hreflang="en" data-drupal-link-system-path="node/189" class="en"><a href="../../news/ccbs-cyber-tips-how-mitigate-security-risks-remote-desktop-protocol-rdp.html" class="language-link" hreflang="en" data-drupal-link-system-path="node/189">en</a></li></ul>
+  </div>
+
+  </div>
+
+            <div class="top-header-link-wrapper">
+              <span class="link-gov">Autres informations et services du gouvernement : <a href="https://www.belgium.be/" target="_blank">www.belgium.be</a></span>
+              <img class="img-gov" src="../../themes/custom/sow_work_theme/images/header/blgm_beLogo.svg" width="30" height="24" loading="eager"/>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="big-header">
+      <div class="logo-wrapper">
+        <a href="../../fr.html" class="logo">
+          <img src="../../themes/custom/sow_work_theme/logo.svg" alt="Logo" width="141" height="40" loading="eager">
+        </a>
+      </div>
+      <button class="menu-toggle menu-burger hide-for-large">
+        <span class="burger-inner">
+        <span></span><span></span><span></span></span>
+      </button>
+      <div class="nav-wrapper show-for-large">
+                  <div class="meta-header">
+              <div>
+    <nav role="navigation" aria-labelledby="block-sow-work-theme-main-menu-menu" id="block-sow-work-theme-main-menu" class="block-sow-work-theme-main-menu">
+            
+  <h2 class="block-title visually-hidden" id="block-sow-work-theme-main-menu-menu">Main navigation</h2>
+  
+
+        
+  
+                              
+    <ul data-region="meta_header" class="menu large-horizontal main-menu-nav mega-menu" data-responsive-menu="accordion large-dropdown">
+  
+                
+      <li>
+        <a href="../tools-resources.html" data-drupal-link-system-path="tools-resources">Outils &amp; Ressources</a>
+
+                                                                                              
+                
+                
+              </li>
+                
+      <li>
+        <a href="../support.html" data-drupal-link-system-path="support">Support</a>
+
+                                                                                              
+                
+                
+              </li>
+                
+      <li>
+        <a href="../propos-de-nous.html" data-drupal-link-system-path="node/34">&#192; propos de nous</a>
+
+                                                                                              
+                
+                
+              </li>
+                
+      <li>
+        <a href="../contact.html" data-drupal-link-system-path="node/33">Contact</a>
+
+                                                                                              
+                
+                
+              </li>
+    
+          </ul>
+    
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-save-my-organisation-nav-menu" id="block-save-my-organisation-nav" class="block-save-my-organisation-nav">
+            
+  <h2 class="block-title visually-hidden" id="block-save-my-organisation-nav-menu">Save my organisation</h2>
+  
+
+        
+              <ul class="menu">
+              <li>
+        <a href="../register-my-organisation.html" class="button" data-drupal-link-system-path="node/136">Enregistrer mon organisation</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+          </div>
+              </div>
+    </div>
+          <div class="mobile-nav hide-for-large" id="mobile-nav">
+          <div class="menu-wrapper">
+              <div class="menu--header">
+                  <div class="menu--logo-wrapper">
+                      <a href="../../fr.html" class="logo">
+                          <img src="../../themes/custom/sow_work_theme/images/logo-white.svg" alt="Logo" width="138" height="40" loading="lazy">
+                      </a>
+                  </div>
+                  <button class="close-button" aria-label="Close modal" type="button">
+                      <span aria-hidden="true" class="icon-close"></span>
+                  </button>
+              </div>
+              <div class="menu--links-wrapper">
+                    <div>
+    <nav role="navigation" aria-labelledby="block-main-nav-mobile-menu" id="block-main-nav-mobile" class="block-main-nav-mobile">
+            
+  <h2 class="block-title visually-hidden" id="block-main-nav-mobile-menu">Main navigation</h2>
+  
+
+        
+  
+                              
+          <ul data-region="mobile_nav" class="menu large-horizontal" data-responsive-menu="accordion large-dropdown data-accordion-menu" data-submenu-toggle="true">
+    
+          <li>
+        <a href="../tools-resources.html" data-drupal-link-system-path="tools-resources">Outils &amp; Ressources</a>
+
+                                                                                              
+                
+                
+              </li>
+          <li>
+        <a href="../support.html" data-drupal-link-system-path="support">Support</a>
+
+                                                                                              
+                
+                
+              </li>
+          <li>
+        <a href="../propos-de-nous.html" data-drupal-link-system-path="node/34">&#192; propos de nous</a>
+
+                                                                                              
+                
+                
+              </li>
+          <li>
+        <a href="../contact.html" data-drupal-link-system-path="node/33">Contact</a>
+
+                                                                                              
+                
+                
+              </li>
+    
+            </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-save-my-organisation-nav-mobile-menu" id="block-save-my-organisation-nav-mobile" class="block-save-my-organisation-nav-mobile">
+            
+  <h2 class="block-title visually-hidden" id="block-save-my-organisation-nav-mobile-menu">Save my organisation</h2>
+  
+
+        
+              <ul class="menu">
+              <li>
+        <a href="../register-my-organisation.html" class="button" data-drupal-link-system-path="node/136">Enregistrer mon organisation</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+              </div>
+          </div>
+          <div class="menu--overlay"></div>
+      </div>
+      </div>
+
+  <a href="#main-content" class="visually-hidden focusable skip-link">
+    Skip to main content
+  </a>
+
+    <div id="region-breadcrumb" class="region-breadcrumb">
+    <div class="row">
+        <div>
+    <div class="views-element-container block-sow-work-theme-views-block-announcement-banner" id="block-sow-work-theme-views-block-announcement-banner">
+  
+  
+      <div>
+
+<div class="announcement-list js-view-dom-id-cda050803b828bd03f8a7cd110e25fe871888098b3392e22d86995b1aa563f91 js-announcement-session">
+  
+  
+  
+
+  
+  
+  
+
+    <div class="announcement--msg--slider-wrapper js-loading-announcement-list ">
+      <div class="announcement--swiper">
+        <div  class="swiper-wrapper">
+              <div class="views-row swiper-slide">
+<article id="node-191"  class="announcement--msg">
+  <div class="announcement--msg--container txt-only">
+    <div class="announcement--msg--txt">
+      
+      <h2 class="announcement--msg--title">
+        <span>NIS2: &#202;tes vous dans le champ d&#039;application ?</span>
+
+      </h2>
+      
+              <div class="announcement--msg--content ">
+          
+            <div class="field field--node-field-announcement-content field--name-field-announcement-content field--type-text-long field--label-hidden field__item"><p><span style="white-space:pre-wrap;">La nouvelle loi belge sur la cybers&#233;curit&#233; est entr&#233;e en vigueur.</span></p></div>
+      
+
+        </div>
+          </div>
+        <div class="announcement--msg--other">
+                    <div class="announcement--msg--btn">
+          
+          
+
+                                                                      <a href="../tools-resources/guide-de-demarrage-rapide-avec-nis2.html" class="button" target="">En savoir plus</a>
+                    
+      
+
+        </div>
+          </div>
+      </div>
+</article>
+</div>
+    <div class="views-row swiper-slide">
+<article id="node-190"  class="announcement--msg">
+  <div class="announcement--msg--container txt-only">
+    <div class="announcement--msg--txt">
+      
+      <h2 class="announcement--msg--title">
+        <span>Vos comptes sont-ils bien prot&#233;g&#233;s ?</span>
+
+      </h2>
+      
+              <div class="announcement--msg--content ">
+          
+            <div class="field field--node-field-announcement-content field--name-field-announcement-content field--type-text-long field--label-hidden field__item"><p><span style="white-space:pre-wrap;">Utilisez l'authentification multifactorielle dans la mesure du possible.</span></p></div>
+      
+
+        </div>
+          </div>
+        <div class="announcement--msg--other">
+                    <div class="announcement--msg--btn">
+          
+          
+
+                                                                      <a href="../recent-news-tips-and-warning/campagne-safeonweb-2024.html" class="button" target="">En savoir plus</a>
+                    
+      
+
+        </div>
+          </div>
+      </div>
+</article>
+</div>
+
+        </div>
+        <div class="announcement-swiper-pagination"></div>
+      </div>
+      <button class="announcement--msg--close icon-close-s" type="button"></button>
+    </div>
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<div id="block-breadcrumbs" class="block-breadcrumbs">
+  
+  
+        <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <div class="breadcrumb__content">
+      <ol class="breadcrumb__list">
+                  <li class="breadcrumb__item">
+                                          <a href="../../fr.html" class="home-link icon-home breadcrumb__link"></a>
+                                    </li>
+                  <li class="breadcrumb__item">
+                                          <a href="../news.html" class="breadcrumb__link">News</a>
+                                    </li>
+                  <li class="breadcrumb__item">
+                                        <div class="last-crumb">Les cyberastuces du CCB : Comment att&#233;nuer les risques de s&#233;curit&#233; pour le protocole RDP (Remote ...</div>
+                                    </li>
+              </ol>
+    </div>
+  </nav>
+
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+        <header class="row hero--region" role="banner" aria-label="Site header">
+                    <div class="large-12 columns">
+            <div>
+    <div class="views-element-container block-views-block-hero-hero" id="block-views-block-hero-hero">
+  
+  
+      <div><div class="js-view-dom-id-db4f9e8156af61386c457c56876e19159b90eb6e636c273b63304f3257f80dc4">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row">
+
+<article  class="article--hero hero">
+  <div class="hero--inner">
+          <div class="hero--img">
+        
+            <div class="field field--node-field-article-img field--name-field-article-img field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+  <div class="field field--media-field-media-image field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field-label show-for-sr">Image</div>
+                  <div class="field__item">    <picture>
+                  <source srcset="/sites/default/files/styles/hero_wide_1_4/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=ZicIqXbf 1x, /sites/default/files/styles/hero_wide_1_4_x2/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=H07bB1m9 2x" media="all and (min-width: 1600px)" type="image/webp" width="1920" height="480"/>
+              <source srcset="/sites/default/files/styles/hero_1_4_xxl/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=WP02t1Cf 1x, /sites/default/files/styles/hero_1_4_xxl_x2/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=x0Zw2nmT 2x" media="all and (min-width: 1280px)" type="image/webp" width="1600" height="400"/>
+              <source srcset="/sites/default/files/styles/hero_large_1_4/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=V62XPEe6 1x, /sites/default/files/styles/hero_large_1_4_x2/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=YVhW5775 2x" media="all and (min-width: 768px)" type="image/webp" width="1024" height="256"/>
+              <source srcset="/sites/default/files/styles/hero_xl_1_4/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=w_HFU9XO 1x, /sites/default/files/styles/hero_xl_1_4_x2/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=BL6ortHF 2x" media="all and (min-width: 1024px)" type="image/webp" width="1280" height="320"/>
+              <source srcset="/sites/default/files/styles/banner_hero_mlarge/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=VmPYVFEh 1x, /sites/default/files/styles/banner_hero_mlarge_2x/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=lr5FlEFI 2x" media="all and (min-width: 640px)" type="image/webp" width="768" height="384"/>
+              <source srcset="/sites/default/files/styles/banner_hero_small/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=cauj3nvf 1x, /sites/default/files/styles/banner_hero_small_2x/public/2024-05/cyber_at_work_1.webp?h=0e919ddb&amp;itok=5oW2SNuA 2x" type="image/webp" width="640" height="320"/>
+              <source srcset="/sites/default/files/styles/hero_wide_1_4/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=ZicIqXbf 1x, /sites/default/files/styles/hero_wide_1_4_x2/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=H07bB1m9 2x" media="all and (min-width: 1600px)" type="image/jpeg" width="1920" height="480"/>
+              <source srcset="/sites/default/files/styles/hero_1_4_xxl/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=WP02t1Cf 1x, /sites/default/files/styles/hero_1_4_xxl_x2/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=x0Zw2nmT 2x" media="all and (min-width: 1280px)" type="image/jpeg" width="1600" height="400"/>
+              <source srcset="/sites/default/files/styles/hero_large_1_4/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=V62XPEe6 1x, /sites/default/files/styles/hero_large_1_4_x2/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=YVhW5775 2x" media="all and (min-width: 768px)" type="image/jpeg" width="1024" height="256"/>
+              <source srcset="/sites/default/files/styles/hero_xl_1_4/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=w_HFU9XO 1x, /sites/default/files/styles/hero_xl_1_4_x2/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=BL6ortHF 2x" media="all and (min-width: 1024px)" type="image/jpeg" width="1280" height="320"/>
+              <source srcset="/sites/default/files/styles/banner_hero_mlarge/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=VmPYVFEh 1x, /sites/default/files/styles/banner_hero_mlarge_2x/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=lr5FlEFI 2x" media="all and (min-width: 640px)" type="image/jpeg" width="768" height="384"/>
+              <source srcset="/sites/default/files/styles/banner_hero_small/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=cauj3nvf 1x, /sites/default/files/styles/banner_hero_small_2x/public/2024-05/cyber_at_work_1.jpg?h=0e919ddb&amp;itok=5oW2SNuA 2x" type="image/jpeg" width="640" height="320"/>
+                  <img loading="eager" width="1638" height="409" src="../../sites/default/files/styles/hero_large_1_4_x2/public/2024-05/cyber_at_work_1d5b3.jpg?h=0e919ddb&amp;itok=YVhW5775" alt="cyber_at_work.jpg" />
+
+  </picture>
+
+</div>
+              </div>
+
+
+  </article>
+</div>
+      
+
+      </div>
+        <div class="hero--content-wrapper">
+              <div class="hero--content-txt">
+                          <h1 class="hero--title"><span>Les cyberastuces du CCB : Comment att&#233;nuer les risques de s&#233;curit&#233; pour le protocole RDP (Remote Desktop Protocol)</span>
+</h1>
+                </div>
+                          <div class="hero--datas">
+                      <div class="hero--date icon-calendar">
+              
+            <div class="field field--node-field-article-date field--name-field-article-date field--type-datetime field--label-hidden field__item"><time datetime="2024-05-16T12:00:00Z">16 May 2024</time>
+</div>
+      
+
+            </div>
+                                <span class="dot-divider"></span>
+                                <div class="hero--time icon-time">
+              Temps de lecture:
+            <div content="17" class="field field--node-field-article-reading-time field--name-field-article-reading-time field--type-integer field--label-hidden field__item">17min</div>
+      
+
+            </div>
+                  </div>
+                      </div>
+  </div>
+
+</article>
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+          </header>
+  
+  
+  
+  
+              <div class="row">
+              <main id="main" class="cell columns main-js" role="main">
+                  <div class="region-highlighted panel"><div data-drupal-messages-fallback class="hidden"></div></div>                <a id="main-content"></a>
+        <section>
+          
+        </section>
+        <section>
+          
+        </section>
+        <section>
+            <div>
+    <div id="block-sow-work-theme-content" class="block-sow-work-theme-content">
+  
+  
+                                    <article id="node-189"  class="has-summary article-content grid-container-summary paragraph-spacing-small">
+  
+  
+ <div class="addtoany">
+  <span class="a2a_kit addtoany_list" data-a2a-url="" data-a2a-title="">
+    <a class="a2a_button_linkedin" target="_blank" rel="nofollow noopener" href="../../index.html#linkedin">
+      <span class="a2a_svg a2a_s__default a2a_s_linkedin" style="background-color: white;">
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.41503 1.83742C3.39555 0.953373 2.76336 0.280029 1.73678 0.280029C0.710204 0.280029 0.0390625 0.953373 0.0390625 1.83742C0.0390625 2.70316 0.690367 3.39589 1.69783 3.39589H1.71701C2.76336 3.39589 3.41503 2.70316 3.41503 1.83742Z" fill="#0077B5"/>
+          <path d="M3.21653 4.6266H0.21566V13.643H3.21653V4.6266Z" fill="#0077B5"/>
+          <path d="M10.5839 4.41468C12.5586 4.41468 14.0391 5.70362 14.0391 8.47306L14.0389 13.6428H11.0382V8.819C11.0382 7.60738 10.604 6.7806 9.51762 6.7806C8.68857 6.7806 8.19476 7.33797 7.97787 7.87631C7.89853 8.06924 7.87905 8.33805 7.87905 8.60752V13.643H4.87782C4.87782 13.643 4.91738 5.47269 4.87782 4.62664H7.87905V5.90373C8.27734 5.28981 8.99067 4.41468 10.5839 4.41468Z" fill="#0077B5"/>
+        </svg>
+      </span>
+      <span class="a2a_label">LinkedIn</span>
+    </a>
+    <a class="a2a_button_facebook" target="_blank" rel="nofollow noopener" href="../../index.html#facebook">
+      <span class="a2a_svg a2a_s__default a2a_s_facebook" style="background-color: white;">
+        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.28186 16V7.99906H7.524L7.82113 5.2419H5.28186L5.28567 3.86191C5.28567 3.1428 5.35503 2.75748 6.40356 2.75748H7.80526V0H5.5628C2.86924 0 1.92118 1.33752 1.92118 3.58682V5.24221H0.242188V7.99938H1.92118V16H5.28186Z" fill="#1877F2"/>
+        </svg>
+      </span>
+      <span class="a2a_label">Facebook</span>
+    </a>
+    <a class="a2a_button_x" target="_blank" rel="nofollow noopener" href="../../index.html#twitter">
+      <span class="a2a_svg a2a_s__default a2a_s_x" style="background-color: white;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="m3.48 4 6.611 8.825L3.44 20h1.497l5.824-6.282L15.466 20h5.095l-6.982-9.321L19.77 4h-1.498L12.91 9.785 8.576 4H3.48Zm2.202 1.101h2.34L18.36 18.9h-2.34L5.681 5.1Z" fill="#000000"/>
+        </svg>
+      </span>
+      <span class="a2a_label">X</span>
+    </a>
+  </span>
+</div>
+   
+  <div class="anchors-menu">
+    <div class="menu-wrapper">
+      <h2 class="icon-menu anchors-wrapper-title">
+        Table des mati&#232;res
+      </h2>
+      <div class="anchors-wrapper">
+                                                                                          <div class="anchors-item">
+                  
+      <div class="paragraph paragraph--type--content paragraph--view-mode--anchor paragraph--content-paragraph">
+              <a href="#scroll-to-823" class="link-anchor">Risques</a>
+          </div>
+  
+              </div>
+                                                                                                                                <div class="anchors-item">
+                  
+      <div class="paragraph paragraph--type--content paragraph--view-mode--anchor paragraph--content-paragraph">
+              <a href="#scroll-to-827" class="link-anchor">Att&#233;nuations recommand&#233;es </a>
+          </div>
+  
+              </div>
+                                                              <div class="anchors-item">
+                  
+      <div class="paragraph paragraph--type--content paragraph--view-mode--anchor paragraph--content-paragraph">
+              <a href="#scroll-to-826" class="link-anchor">Solutions alternatives</a>
+          </div>
+  
+              </div>
+                                                          </div>
+    </div>
+  </div>
+
+  <div class="view-mode-full">
+          <div class="article--intro content--intro">
+        
+            <div class="field field--node-field-article-descr field--name-field-article-descr field--type-text-long field--label-hidden field__item"><p>Le protocole RDP est un protocole qui permet aux utilisateurs d'acc&#233;der &#224; des ordinateurs &#224; distance et de les contr&#244;ler. Bien qu'il offre une flexibilit&#233; conviviale, il g&#233;n&#232;re &#233;galement des risques de s&#233;curit&#233; importants pour ce qui est de la surface d'attaque de votre organisation. De nombreux assaillants utilisent le RDP pour acc&#233;der &#224; un r&#233;seau et exfiltrer des donn&#233;es vol&#233;es.</p><p>Afin d&#8217;am&#233;liorer votre protection, le Centre pour la cybers&#233;curit&#233; Belgique (CCB) a compil&#233; une liste de recommandations et de tutoriels &#233;tape par &#233;tape.</p></div>
+      
+
+      </div>
+        
+      <div class="field field--node-field-article-content field--name-field-article-content field--type-entity-reference-revisions field--label-hidden paragraph--entity-ref--wrapper field__items">
+          
+      
+
+
+    <div class="highlighted-content paragraph paragraph--type--focus paragraph--view-mode--default has-bg-img paragraph-spacing">
+      <div class="content--wrapper">
+          <div class="content--body">
+                          
+            <div class="field field--paragraph-field-focus-txt field--name-field-focus-txt field--type-text-long field--label-hidden field__item"><p><strong>Trop de texte? Vous pr&#233;f&#233;rez les vid&#233;os ?</strong></p><p>Visionnez notre webinaire sur le RDP pour en savoir plus sur les cyber risques et comment les r&#233;duire.</p></div>
+      
+
+          </div>
+                              
+          
+
+                                                                      <a href="https://www.youtube.com/watch?v=-u2ZuGfixHM" class="button" target="_blank">Webinar</a>
+                    
+      
+
+                        </div>
+    </div>
+
+          
+            
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default" id="scroll-to-823">
+          <h2 class="content--title">Risques</h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><p><span>Le protocole RDP est l'un des protocoles les plus connus, car il est pr&#233;sent par d&#233;faut sur les machines Windows et se retrouve &#233;galement sur les appareils Apple. Le RDP n'est pas s&#233;curis&#233; de par sa conception, c'est pourquoi il peut engendrer des menaces de s&#233;curit&#233;, &#224; moins que votre organisation ne renforce sa configuration pour une utilisation plus s&#251;re.</span></p></div>
+      
+
+    </div>
+      </div>
+
+          
+      
+
+
+    <div class="highlighted-content paragraph paragraph--type--focus paragraph--view-mode--default has-bg-img paragraph-spacing">
+      <div class="content--wrapper">
+          <div class="content--body">
+                          
+            <div class="field field--paragraph-field-focus-txt field--name-field-focus-txt field--type-text-long field--label-hidden field__item"><p><span lang="EN-US"><strong>L'approche de la d&#233;fense par couches</strong></span></p><p><span>Il est recommand&#233; d'appliquer diff&#233;rentes mesures pour att&#233;nuer les risques.&nbsp;</span></p><p><span>Une bonne pratique consiste &#224;<strong> combiner plusieurs mesures techniques avec la sensibilisation des utilisateurs et la surveillance proactive&nbsp;</strong>des activit&#233;s suspectes.</span></p></div>
+      
+
+          </div>
+                              
+                        </div>
+    </div>
+
+          
+    
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default">
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><p><strong>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;Attaque par ransomware :</strong><br>Le RDP est souvent la cible des op&#233;rateurs de ransomwares. Ils l'utilisent comme point d'entr&#233;e pour d&#233;ployer des ransomwares sur les syst&#232;mes cibl&#233;s et crypter des donn&#233;es pr&#233;cieuses.</p><p><strong>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;Exposition des ports et visibilit&#233; du r&#233;seau</strong><br>Le RDP utilise g&#233;n&#233;ralement le port 3389 et, si la connexion se produit sur l&#8217;Internet ouvert, il expose votre r&#233;seau &#224; des attaques potentielles.</p><p><strong>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;Vuln&#233;rabilit&#233;s et exploitations :</strong><br>Le logiciel RDP et le syst&#232;me d'exploitation sous-jacent peuvent pr&#233;senter des vuln&#233;rabilit&#233;s susceptibles d'&#234;tre exploit&#233;es par des hackers pour obtenir un acc&#232;s non-autoris&#233; ou ex&#233;cuter du code malveillant.</p><p><strong>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;Attaques Man-in-the-Middle (MitM) :</strong><br>Les sessions RDP non s&#233;curis&#233;es sont susceptibles d'&#234;tre intercept&#233;es, ce qui permet aux hackers d'espionner les communications entre le client et le serveur.</p><p><strong>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;Attaques par force brute :</strong><br>Les hackers peuvent tenter d'obtenir un acc&#232;s non autoris&#233; en essayant syst&#233;matiquement diff&#233;rentes combinaisons de noms d'utilisateur et de mots de passe.</p><p><strong>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;Vol de donn&#233;es d'identification :</strong><br>Les hackers peuvent utiliser le phishing ou d'autres tactiques pour voler les informations d'identification RDP, ce qui permet un acc&#232;s non autoris&#233;.</p><p><strong>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;Mouvements lat&#233;raux et exploitation des r&#233;seaux :</strong><br>Une fois &#224; l'int&#233;rieur d'un r&#233;seau, les acteurs malveillants peuvent utiliser des sessions RDP compromises pour se d&#233;placer lat&#233;ralement, &#233;lever leurs privil&#232;ges et cibler des syst&#232;mes critiques.</p></div>
+      
+
+    </div>
+      </div>
+
+            
+
+
+  <div class="paragraph--media has-bg-img paragraph-spacing paragraph paragraph--type--image paragraph--view-mode--default  ">
+          
+            <div class="field field--paragraph-field-img field--name-field-img field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+  <div class="field field--media-field-media-image field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field-label show-for-sr">Image</div>
+                  <div class="field__item">    <picture>
+                  <source srcset="/sites/default/files/styles/image_content_large/public/2024-05/server.webp?itok=c2YrghZv 1x, /sites/default/files/styles/image_content_large_x2/public/2024-05/server.webp?itok=HIG9u-8y 2x" media="all and (min-width: 768px)" type="image/webp" width="768" height="458"/>
+              <source srcset="/sites/default/files/styles/image_content_medium/public/2024-05/server.webp?itok=E_M9kDip 1x, /sites/default/files/styles/image_content_medium_x2/public/2024-05/server.webp?itok=LnjErF8g 2x" media="all and (min-width: 640px)" type="image/webp" width="544" height="324"/>
+              <source srcset="/sites/default/files/styles/image_content_small/public/2024-05/server.webp?itok=CaH_OhNM 1x, /sites/default/files/styles/image_content_small_x2/public/2024-05/server.webp?itok=PBzTVuU2 2x" type="image/webp" width="590" height="352"/>
+              <source srcset="/sites/default/files/styles/image_content_large/public/2024-05/server.jpg?itok=c2YrghZv 1x, /sites/default/files/styles/image_content_large_x2/public/2024-05/server.jpg?itok=HIG9u-8y 2x" media="all and (min-width: 768px)" type="image/jpeg" width="768" height="458"/>
+              <source srcset="/sites/default/files/styles/image_content_medium/public/2024-05/server.jpg?itok=E_M9kDip 1x, /sites/default/files/styles/image_content_medium_x2/public/2024-05/server.jpg?itok=LnjErF8g 2x" media="all and (min-width: 640px)" type="image/jpeg" width="544" height="324"/>
+              <source srcset="/sites/default/files/styles/image_content_small/public/2024-05/server.jpg?itok=CaH_OhNM 1x, /sites/default/files/styles/image_content_small_x2/public/2024-05/server.jpg?itok=PBzTVuU2 2x" type="image/jpeg" width="590" height="352"/>
+                  <img loading="lazy" width="768" height="458" src="../../sites/default/files/styles/image_content_large/public/2024-05/server5c0f.jpg?itok=c2YrghZv" alt="server.jpg" />
+
+  </picture>
+
+</div>
+              </div>
+
+
+  </article>
+</div>
+      
+
+            </div>
+
+          
+            
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default" id="scroll-to-827">
+          <h2 class="content--title">Att&#233;nuations recommand&#233;es </h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><p><span>Si vous d&#233;cidez de continuer &#224; utiliser le RDP, le Centre pour la cybers&#233;curit&#233; Belgique vous recommande de mettre en &#339;uvre les mesures d'att&#233;nuation suivantes :</span></p><ul><li><span><strong>Activation de l'authentification au niveau du r&#233;seau (NLA)&nbsp;:</strong></span></li></ul><p><span>Assurez-vous que l'authentification au niveau du r&#233;seau est activ&#233;e sur votre serveur RDP. L'authentification de niveau r&#233;seau exige une authentification avant l'&#233;tablissement d'une session &#224; distance, ce qui ajoute une couche de s&#233;curit&#233; en validant les informations d'identification de l'utilisateur avant d'autoriser l'acc&#232;s. Pour plus d'informations sur les NLA et la configuration du bureau &#224; distance, cliquez ici.&nbsp;</span></p><ul><li><strong><span lang="EN-US"></span></strong><span lang="EN-US"><strong>Restriction de l'acc&#232;s RDP :</strong></span></li></ul><p><span>Limitez l'acc&#232;s RDP &#224; des adresses IP sp&#233;cifiques ou des utilisateurs sp&#233;cifiques. Vous pouvez aussi opter pour un r&#233;seau priv&#233; virtuel (VPN) ou une solution d&#8217;acc&#232;s au r&#233;seau de confiance z&#233;ro pour cr&#233;er un tunnel s&#233;curis&#233; pour le trafic RDP. Cela permet de r&#233;duire l'exposition via Internet et de s'assurer que seuls les utilisateurs autoris&#233;s peuvent se connecter &#224; distance.<strong>&nbsp;</strong>Cette&nbsp;</span><a href="https://www.youtube.com/watch?v=2zP9YBrwhVc"><span lang="FR-BE">vid&#233;o</span></a><span> illustre comment restreindre votre RDP &#224; des adresses IP sp&#233;cifiques. D&#233;couvrez&nbsp;</span><a href="https://security.berkeley.edu/education-awareness/securing-remote-desktop-rdp-system-administrators"><span lang="FR-BE">ici</span></a><span> comment restreindre votre RDP &#224; certains utilisateurs.</span></p><ul><li><span><strong>Recours &#224; des m&#233;thodes d'authentification fortes :</strong></span></li></ul><p><span>Mettez en &#339;uvre des m&#233;thodes d'authentification fortes, telles que l'authentification multifactorielle (MFA, parfois d&#233;sign&#233;e par 2FA), pour renforcer la v&#233;rification des utilisateurs. Le MFA ajoute une couche de s&#233;curit&#233; en demandant aux utilisateurs de fournir plusieurs formes d'identification, ce qui r&#233;duit le risque d'acc&#232;s non autoris&#233;. Veillez &#224; mettre en &#339;uvre le MFA sur les comptes privil&#233;gi&#233;s tels que les comptes d'administrateur ! Les comptes &#224; privil&#232;ges sont tr&#232;s recherch&#233;s par les acteurs de la menace.</span></p><ul><li><span><strong>Mise en &#339;uvre de politiques de verrouillage des comptes :</strong></span></li></ul><p><span>Configurez des politiques de verrouillage des comptes pour emp&#234;cher les attaques par force brute. Cela limite le nombre de tentatives de connexion infructueuses, r&#233;duisant ainsi le risque d'acc&#232;s non autoris&#233; par des tentatives de connexion r&#233;p&#233;t&#233;es. Vous pouvez trouver des tutoriels &#233;tape par &#233;tape sur Youtube pour les postes de travail individuels et les politiques de groupe.</span></p><ul><li><strong><span lang="EN-US"></span></strong><span lang="EN-US"><strong>Recours au chiffrement :</strong></span></li></ul><p><span>Veillez &#224; ce que les sessions RDP soient crypt&#233;es pour prot&#233;ger les donn&#233;es pendant leur transit. Utilisez des protocoles tels que Transport Layer Security (TLS) ou mettez en place un VPN pour cr&#233;er un canal de communication s&#233;curis&#233; entre le client et le serveur, emp&#234;chant ainsi toute interception et espionnage.</span></p><ul><li><span><strong>Modification des ports par d&#233;faut :</strong></span></li></ul><p><span>Envisagez de remplacer le port RDP par d&#233;faut (TCP 3389) par un port non standard. Bien que cette mesure n'offre pas une s&#233;curit&#233; &#224; toute &#233;preuve, elle peut contribuer &#224; d&#233;courager les attaques automatis&#233;es qui ciblent les ports par d&#233;faut. Visionnez cette vid&#233;o pour d&#233;couvrir comment remplacer un port par d&#233;faut et modifier les r&#232;gles de pare-feu associ&#233;es. Toutefois, cette mesure n'est pas suffisante et doit s'inscrire dans le cadre d'une strat&#233;gie de s&#233;curit&#233; plus large.</span></p><ul><li><span><strong>Mises &#224; jour et correctifs r&#233;guliers des syst&#232;mes :</strong></span></li></ul><p><span>Maintenez le syst&#232;me d'exploitation et le logiciel RDP &#224; jour avec les derniers correctifs de s&#233;curit&#233;. V&#233;rifiez r&#233;guli&#232;rement l'existence de mises &#224; jour et appliquez-les rapidement afin de corriger les vuln&#233;rabilit&#233;s connues et de vous prot&#233;ger contre les exploitations potentielles.</span></p><ul><li><span><strong>Audit et surveillance des sessions RDP :</strong></span></li></ul><p><span>Activez la journalisation des sessions RDP et examinez r&#233;guli&#232;rement les journaux pour d&#233;tecter toute activit&#233; suspecte. Mettez en place des alertes en cas d'&#233;checs multiples de tentatives de connexion ou d'autres comportements anormaux. La surveillance et l'audit sont essentiels pour d&#233;tecter les incidents de s&#233;curit&#233; potentiels et y r&#233;pondre.</span></p><ul><li><span><strong>Recours &#224; la protection des terminaux :</strong></span></li></ul><p><span>Installez et maintenez des solutions solides de protection des terminaux, tant du c&#244;t&#233; client que du c&#244;t&#233; serveur. Il s'agit notamment de logiciels antivirus, de pare-feu et de syst&#232;mes de d&#233;tection/pr&#233;vention des intrusions destin&#233;s &#224; d&#233;tecter et pr&#233;venir les activit&#233;s malveillantes.</span></p><ul><li><span><strong>Formation r&#233;guli&#232;re des utilisateurs &#224; la s&#233;curit&#233; :</strong></span></li></ul><p><span>Sensibilisez les utilisateurs aux bonnes pratiques en mati&#232;re de s&#233;curit&#233; RDP, notamment &#224; l'importance d'utiliser des mots de passe forts, d'&#233;viter les r&#233;seaux publics pour les sessions RDP et de signaler rapidement toute activit&#233; suspecte.</span></p><ul><li><strong><span lang="EN-US"></span></strong><span lang="EN-US"><strong>Audits de s&#233;curit&#233; r&#233;guliers :</strong></span></li></ul><p><span>Effectuez r&#233;guli&#232;rement des audits de s&#233;curit&#233; afin d'identifier et de corriger les vuln&#233;rabilit&#233;s potentielles de votre infrastructure RDP. Cette approche proactive permet de s'assurer que les mesures de s&#233;curit&#233; restent efficaces au fil du temps. Vous pouvez &#233;galement vous r&#233;f&#233;rer &#224; une s&#233;rie de vid&#233;os explicatives et de questions d&#8217;&#233;tude pr&#233;par&#233;es par Sophos :&nbsp;</span><a href="https://news.sophos.com/en-us/2024/03/20/remote-desktop-protocol-the-series/"><span>https://news.sophos.com/en-us/2024/03/20/remote-desktop-protocol-the-series/</span></a><span>&nbsp;</span></p></div>
+      
+
+    </div>
+      </div>
+
+          
+            
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default" id="scroll-to-826">
+          <h2 class="content--title">Solutions alternatives</h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><p><span>Le RDP est loin d'&#234;tre le seul moyen de se connecter &#224; distance &#224; une machine.&nbsp;</span><span lang="EN-US">Il existe de nombreuses autres solutions d'acc&#232;s &#224; distance :</span></p><ul><li><span><strong>SSH (Secure Shell):</strong></span><br><span>Cas d'utilisation : acc&#232;s s&#233;curis&#233; &#224; la ligne de commande et aux transferts de fichiers.</span></li></ul><p><span>Caract&#233;ristiques de s&#233;curit&#233; : chiffrement efficace, authentification par cl&#233; publique et possibilit&#233; d'acheminer d'autres protocoles en toute s&#233;curit&#233;.</span></p><p><span lang="EN-US">Applications notables : OpenSSH (open source), PuTTY (Windows), WinSCP (Windows, pour les transferts de fichiers).</span></p><ul><li><span><strong>VPN (Virtual Private Network) :</strong></span><br><span>Cas d'utilisation : connecter en toute s&#233;curit&#233; des utilisateurs distants &#224; un r&#233;seau priv&#233;.</span></li></ul><p><span>Caract&#233;ristiques de s&#233;curit&#233; : tunnel crypt&#233; pour l'ensemble du trafic r&#233;seau, incluant souvent des m&#233;canismes d'authentification et d'autorisation.</span></p><p><span lang="EN-US">Applications notables : OpenVPN, Cisco AnyConnect, Microsoft VPN.</span></p><ul><li><span><strong>VNC (Virtual Network Computing)&nbsp;:</strong></span><br><span>Cas d'utilisation : acc&#232;s et contr&#244;le du bureau &#224; distance.</span></li></ul><p><span>Caract&#233;ristiques de s&#233;curit&#233; : versions crypt&#233;es (telles que VNC via SSH), authentification par mot de passe et prise en charge de l'authentification multifactorielle.</span></p><p><span lang="EN-US">Applications notables : TightVNC, RealVNC, TigerVNC.</span></p><ul><li><span><strong>TeamViewer :</strong></span><br><span>Cas d'utilisation : acc&#232;s au bureau &#224; distance avec support multiplateforme.</span></li></ul><p><span>Caract&#233;ristiques de s&#233;curit&#233; : chiffrement de bout en bout, authentification &#224; deux facteurs et enregistrement des sessions.</span></p><p><span>Remarque : TeamViewer est facile &#224; utiliser, mais il faut veiller &#224; avoir une configuration correcte et pr&#233;voir des pratiques de s&#233;curit&#233; pour les comptes utilisateurs.</span></p><ul><li><span lang="EN-US"><strong>AnyDesk :</strong></span></li></ul><p><span>Cas d'utilisation : acc&#232;s l&#233;ger et rapide au bureau &#224; distance.</span></p><p><span>Caract&#233;ristiques de s&#233;curit&#233; : chiffrement TLS, authentification &#224; deux facteurs et enregistrement de session.</span></p><p><span>Remarque : comme pour TeamViewer, il convient d'&#234;tre attentif aux configurations de s&#233;curit&#233;.</span></p><ul><li><span><strong>Splashtop :</strong></span></li></ul><p><span>Cas d'utilisation : acc&#232;s au bureau &#224; distance pour les particuliers et les entreprises.</span></p><p><span>Caract&#233;ristiques de s&#233;curit&#233; : chiffrement TLS et AES 256 bits, authentification des p&#233;riph&#233;riques et authentification &#224; deux facteurs.</span></p><p><span>Remarque : offre des solutions pour les particuliers et les entreprises.</span></p><ul><li><span><strong>Guacamole :</strong></span></li></ul><p><span>Cas d'utilisation : passerelle de bureau &#224; distance bas&#233;e sur Internet.</span></p><p><span>Caract&#233;ristiques de s&#233;curit&#233; : support pour SSL/TLS, authentification multifactorielle et int&#233;gration LDAP.</span></p><p><span>Remarque : Guacamole permet un acc&#232;s via un navigateur web sans n&#233;cessiter de logiciel client.</span></p><ul><li><span><strong>Radmin (Remote Administrator) :</strong></span></li></ul><p><span>Cas d'utilisation : contr&#244;le et support &#224; distance.</span></p><p><span>Caract&#233;ristiques de s&#233;curit&#233; : chiffrement AES 256 bits, authentification Windows et filtrage des adresses IP.</span></p><p><span>Remarque : ax&#233; sur un acc&#232;s &#224; distance rapide et s&#233;curis&#233;.</span></p><p><span>Lors de la mise en &#339;uvre d'une solution alternative d'acc&#232;s &#224; distance, il est essentiel de respecter les bonnes pratiques en mati&#232;re de s&#233;curit&#233;.</span></p><p><span>Le Centre pour la cybers&#233;curit&#233; Belgique s'efforce de fournir des informations pr&#233;cises et utiles en utilisant au mieux les ressources publiques existantes et les ressources en ligne gratuites. Bien que nous fassions de notre mieux pour assurer l&#8217;actualisation des articles, il peut arriver que certains liens soient rompus ou que les informations ne soient plus &#224; jour. Les articles et les vid&#233;os choisis sont uniquement mentionn&#233;s dans le but de guider les utilisateurs. Chaque organisation doit adapter les conseils donn&#233;s &#224; son environnement et ses besoins propres.</span></p></div>
+      
+
+    </div>
+      </div>
+
+          
+    
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default">
+          <h2 class="content--title">R&#233;f&#233;rences</h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><p>Pour des conseils techniques d&#233;taill&#233;s, veuillez vous r&#233;f&#233;rer au guide d&#233;di&#233; au RDP du Center for Internet Security&nbsp;:&nbsp;<a href="https://www.cisecurity.org/insights/white-papers/exploited-protocols-remote-desktop-protocol-rdp">https://www.cisecurity.org/insights/white-papers/exploited-protocols-remote-desktop-protocol-rdp</a></p><p>La vid&#233;o du <a href="https://www.youtube.com/watch?v=-u2ZuGfixHM">webinar</a> du CCB sur le RDP est disponible sur notre <a href="https://www.youtube.com/@cybersecuritybelgium">cha&#238;ne Youtube</a>. Les diapositives sont disponibles au format PDF <a href="../../sites/default/files/2024-12/CyberTips_Webinar_RDP_Final.pdf">via le lien suivant</a>.</p></div>
+      
+
+    </div>
+      </div>
+
+          </div>
+  
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+        </section>
+              </main>
+
+          </div>
+  
+      <div class="footer-wrapper">
+                              <section id="pre-footer" class="pre-footer pre-footer-protect ">
+              <div>
+      <div class="footer-protect">
+    <div class="row footer-protect--container">
+            <h2 class="footer-protect--title">Enregistrez votre organisation</h2>
+              <div class="footer-protect--content">
+            <p>Inscrivez votre organisation pour acc&#233;der &#224; des services gratuits suppl&#233;mentaires du CCB et la prot&#233;ger contre les cybermenaces.</p>
+                      <div class="footer-protect--btn">
+              
+      <div class="field field--block-content-field-footer-block-btn field--name-field-footer-block-btn field--type-entity-reference-revisions field--label-hidden paragraph--entity-ref--wrapper field__items">
+          
+
+                                                                      <a href="../register-my-organisation.html" class="button" target="">Enregistrer mon organisation</a>
+                    
+          </div>
+  
+
+            </div>
+                  </div>
+    </div>
+  </div>
+
+  </div>
+
+        </section>
+          <footer class="footer-large">
+                    <div id="footer-middle" class="footer-middle">
+           <div class="footer-second-wrapper global-container">
+  <div class="footer-second-content-wrapper">
+    <div class="footer-logo logo">
+      <a href="../../index.html" class="link-footer-logo">
+        <img src="../../themes/custom/sow_work_theme/images/logo-white.svg" alt="logo website" width="128" height="37" loading="lazy" /></a>
+    </div>
+    <div class="footer-second-description-wrapper">
+      <p>
+        Rendre ensemble
+        <span class="baseline--highlight">la Belgique</span>
+        l'un des pays
+        <span class="baseline--highlight">les moins cyber-vuln&#233;rables</span>
+        d'Europe
+      </p>
+    </div>
+  </div>
+  <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block-mainnavigation">
+            
+  <h2 class="block-title visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+
+    
+    <ul data-region="footer_middle" class="menu large-horizontal main-menu-nav" data-responsive-menu="accordion large-dropdown">
+                  
+      <li>
+        <a href="../tools-resources.html" data-drupal-link-system-path="tools-resources">Outils &amp; Ressources</a>
+
+              </li>
+                
+      <li>
+        <a href="../support.html" data-drupal-link-system-path="support">Support</a>
+
+              </li>
+                
+      <li>
+        <a href="../propos-de-nous.html" data-drupal-link-system-path="node/34">&#192; propos de nous</a>
+
+              </li>
+                
+      <li>
+        <a href="../contact.html" data-drupal-link-system-path="node/33">Contact</a>
+
+              </li>
+      </ul>
+    
+
+  </nav>
+
+</div>
+
+        </div>
+                    <div id="footer-last" class="footer-last">
+          <div class="footer-last-wrapper global-container">
+  <div class="footer-credential">
+    <span>&#169; 2025 &nbsp </span>
+    <a href="../../index.html">atwork.safeonweb.be</a>
+    <span>&nbsp Tous droits r&#233;serv&#233;s.</span>
+    <nav role="navigation" aria-labelledby="block-footerprivracymenu-menu" id="block-footerprivracymenu" class="block-footerprivracymenu">
+            
+  <h2 class="block-title visually-hidden" id="block-footerprivracymenu-menu">Footer privracy menu</h2>
+  
+
+        
+              <ul class="menu">
+              <li>
+        <a href="../donnees-personnelles.html" target="_blank" title="CCB Privacy policy" data-drupal-link-system-path="node/228">Politique de confidentialit&#233;</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+  <div class="footer-last-logo-wrapper">
+    <h2>Nos autres sites web</h2>
+    <div class="footer-last-logo">
+      <a href="https://ccb.belgium.be/" target="_blank">
+        <img src="../../themes/custom/sow_work_theme/images/footer/ccb-logo.png" alt="cccb.be" width="99" height="30" loading="lazy"/>
+      </a>
+      <a href="https://www.safeonweb.be/" target="_blank">
+        <img src="../../themes/custom/sow_work_theme/images/footer/sow_logo.svg" alt="safeonweb.be" width="97" height="30" loading="lazy"/>
+      </a>
+    <div>
+  </div>
+</div>
+
+        </div>
+          </footer>
+    </div>
+  
+    </div>
+
+  </div>
+
+
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"fr\/","currentPath":"node\/189","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"fr"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxdTdEKwyAQ-6HD-4Z9STmrrVL15E4n3ddPusKgL0lIQkLONaZyIt3CbMKlwZFIGC-ETI0z44-gktAuVIOik14pmb9jeqndpqjBO1Aey2A5lhZ89kilcC_rlHP-ke2JLaWnO5v9VdbAoqCnNp_Rknp4Rz8ULzSZXU8ehrcbS8abjYuUeIdPF7ts89ZRi1zuny8P6GBE","theme":"sow_work_theme","theme_token":null},"ajaxTrustedUrl":[],"klaro":{"config":{"elementId":"klaro","storageMethod":"cookie","cookieName":"klaro","cookieExpiresAfterDays":30,"cookieDomain":"","groupByPurpose":true,"acceptAll":true,"hideDeclineAll":false,"hideLearnMore":true,"additionalClass":" hide-consent-dialog-title klaro-theme-sow_work_theme","htmlTexts":false,"autoFocus":true,"privacyPolicy":"https:\/\/ccb.belgium.be\/fr\/donnees-personnelles","services":[{"name":"cms","default":true,"title":"CMS","description":"Provides a joyful user experience.","purposes":["cms"],"callbackCode":"","cookies":[["has_js","","safeonweb-work.webstanz.be"],["^[SESS|SSESS]","","safeonweb-work.webstanz.be"],["^proxyVisitor","","safeonweb-work.webstanz.be"]],"required":true,"optOut":true,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"fr":{"title":"CMS"}}},{"name":"klaro","default":true,"title":"Klaro!","description":"Saves the status of the users consent.","purposes":["cms"],"callbackCode":"","cookies":[["klaro","","safeonweb-work.webstanz.be"]],"required":true,"optOut":false,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"fr":{"title":"Klaro!"}}},{"name":"matomo","default":false,"title":"Matomo","description":"Matomo is an open-source web analytics platform that allows website owners to collect and analyze information about their visitors\u0027 behavior and engagement on their website. The platform provides insights into visitor demographics, traffic sources, page.","purposes":["analytics"],"callbackCode":"","cookies":[["^_pk_.*$","",""],["piwik_ignore","",""]],"required":false,"optOut":false,"onlyOnce":true,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"fr":{"title":"Matomo"}}},{"name":"unknown_app","default":false,"title":"Unknown Apps","description":"Block unknown external resources","purposes":["external_content"],"callbackCode":"","cookies":[],"required":false,"optOut":false,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"fr":{"title":"Unknown Apps"}}}],"translations":{"fr":{"consentModal":{"title":"Les informations que nous collectons","description":"Ici, vous pouvez voir et personnaliser les informations que nous collectons sur vous.\r\n","privacyPolicy":{"name":"Plus d\u0027infos","text":"Pour en savoir plus, merci de lire notre {privacyPolicy}.\r\n"}},"consentNotice":{"title":"Use of personal data and cookies","changeDescription":"Des modifications ont eu lieu depuis votre derni\u00e8re visite, merci de mettre \u00e0 jour votre consentement.","description":"Ce site web utilise des cookies fonctionnels. Afin d\u0027optimiser votre exp\u00e9rience, ce site utilise \u00e9galement des cookies optionnels pour lesquels votre autorisation est requise. {privacyPolicy}","learnMore":"Plus d\u0027info","privacyPolicy":{"name":"Plus d\u0027infos"}},"ok":"OK","save":"Sauvegarder","decline":"Refuser","close":"Fermer","acceptAll":"Accept all","acceptSelected":"Accept selected","service":{"disableAll":{"title":"Changer toutes les options","description":"Utiliser ce bouton pour activer\/d\u00e9sactiver toutes les options"},"optOut":{"title":"(opt-out)","description":"Cette application est charg\u00e9e par d\u00e9faut (mais vous pouvez la d\u00e9sactiver)"},"required":{"title":"(toujours requis)","description":"Cette application est toujours requise"},"purposes":"Utilisations","purpose":"Utilisation"},"contextualConsent":{"acceptAlways":"Always","acceptOnce":"Yes","description":"Do you want to load external content supplied by {title}?"},"poweredBy":"Propuls\u00e9 par Klaro!","purposeItem":{"service":"Service","services":"Services"},"privacyPolicy":{"name":"Plus d\u0027infos","text":"Pour en savoir plus, merci de lire notre {privacyPolicy}.\r\n"},"purposes":{"cms":{"title":"Strictly Necessary Cookies","description":""},"advertising":{"title":"Advertising","description":""},"analytics":{"title":"Performance Cookies","description":""},"security":{"title":"S\u00e9curit\u00e9","description":""},"styling":{"title":"Styling","description":""},"external_content":{"title":"External embeds","description":""},"analyti":{"title":"analytics","description":""}}}},"showNoticeTitle":true,"styling":{"theme":["light"]}},"dialog_mode":"notice","show_toggle_button":false,"toggle_button_icon":null,"show_close_button":false,"exclude_urls":[],"disable_urls":[]},"matomo":{"disableCookies":false,"trackMailto":true},"webform":{"dialog":{"options":{"narrow":{"title":"Narrow","width":600},"normal":{"title":"Normal","width":800},"wide":{"title":"Wide","width":1000}},"entity_type":"node","entity_id":"189"}},"user":{"uid":0,"permissionsHash":"6da4ec0fbd004bac0c909d2a7aa56a4fc5ed7b88018a70dc32175d5c3c8ab3f0"}}</script>
+<script src="../../sites/default/files/js/js_6MTgZAVgFCZPQfF_9ivriNridQtiGlZMZlCusgOoMCcba01.js?scope=footer&amp;delta=0&amp;language=fr&amp;theme=sow_work_theme&amp;include=eJxdTFsOhCAQu9BEzrAnIYOAGmGajEPI7umXKF_-tE1fHKOB5et4iiUrxOgsrHA3UmVDhXuILnTfoae3PdXkWARN1iHH6pVtBYHL2x3N9pF1h17UU8jQ6iYv8eCCjX5Ng8_jN7IdkHn0B_hMRAo"></script>
+<script src="../../modules/contrib/klaro/js/klaro_placeholder.js" async data-type="text/javascript" data-name="unknown_app" data-src="https://static.addtoany.com/menu/page.js"></script>
+<script src="../../sites/default/files/js/js_YU41SNykcevAoAUz6zvfNWpeWm-MX0Ex4cDmXfs1Qa42e7a.js?scope=footer&amp;delta=2&amp;language=fr&amp;theme=sow_work_theme&amp;include=eJxdTFsOhCAQu9BEzrAnIYOAGmGajEPI7umXKF_-tE1fHKOB5et4iiUrxOgsrHA3UmVDhXuILnTfoae3PdXkWARN1iHH6pVtBYHL2x3N9pF1h17UU8jQ6iYv8eCCjX5Ng8_jN7IdkHn0B_hMRAo"></script>
+<script src="../../modules/contrib/klaro/js/klaro_placeholder.js" data-type="text/javascript" data-name="matomo" data-src="/modules/contrib/matomo/js/matomo.js?v=10.4.5"></script>
+<script src="../../sites/default/files/js/js_1Hxn6sMO1Bj0Upfw7zRxAUdL8Z0yxpZYkSNsY56iCtA8cd7.js?scope=footer&amp;delta=4&amp;language=fr&amp;theme=sow_work_theme&amp;include=eJxdTFsOhCAQu9BEzrAnIYOAGmGajEPI7umXKF_-tE1fHKOB5et4iiUrxOgsrHA3UmVDhXuILnTfoae3PdXkWARN1iHH6pVtBYHL2x3N9pF1h17UU8jQ6iYv8eCCjX5Ng8_jN7IdkHn0B_hMRAo"></script>
+
+</body>
+
+<!-- Mirrored from atwork.safeonweb.be/fr/news/les-cyberastuces-du-ccb-comment-attenuer-les-risques-de-securite-pour-le-protocole-rdp-remote by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Aug 2025 15:28:58 GMT -->
+</html>

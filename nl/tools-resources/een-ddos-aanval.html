@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr" prefix="og: https://ogp.me/ns#">
+
+<!-- Mirrored from atwork.safeonweb.be/nl/tools-resources/een-ddos-aanval by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Aug 2025 15:18:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8" />
+<script type="text/plain" data-type="application/javascript" data-name="matomo">var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://stats.excom.fgov.be/" : "http://stats.excom.fgov.be/");_paq.push(["setSiteId", "602"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
+<link rel="canonical" href="een-ddos-aanval.html" />
+<link rel="image_src" href="%2c/themes/custom/sow_work_theme/images/default-share-social.html" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="ImageToolbar" content="false" />
+<script type="application/ld+json">{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": "1",
+            "name": "",
+            "item": "http://atwork.safeonweb.be/nl"
+          },{
+            "@type": "ListItem",
+            "position": "2",
+            "name": "Tools en bronnen",
+            "item": "http://atwork.safeonweb.be/nl/tools-resources"
+          },{
+            "@type": "ListItem",
+            "position": "3",
+            "name": "Een DDoS-aanval",
+            "item": "http://atwork.safeonweb.be/nl/tools-resources/een-ddos-aanval"
+          }]}</script>
+<link rel="icon" href="../../themes/custom/sow_work_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="nl" href="een-ddos-aanval.html" />
+<link rel="alternate" hreflang="fr" href="../../fr/tools-resources/attaque-ddos.html" />
+<link rel="alternate" hreflang="de" href="../../de/tools-resources/ddos-attack.html" />
+<link rel="alternate" hreflang="en" href="../../tools-resources/ddos-attack.html" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.icon_color = "white, #285f78";</script>
+
+    <title>Een DDoS-aanval | CCB Safeonweb</title>
+    <link rel="stylesheet" media="all" href="../../sites/default/files/css/css_q_NViHzN47tLlR44I-whY_YaFhtP00oRqO2gpa8Ao2Ac96d.css?delta=0&amp;language=nl&amp;theme=sow_work_theme&amp;include=eJxdjFEKxCAMBS8U9EglbtJWGo0kutI9_ULpUtif4TEMD4m6Yj0j3iOsprXDS40j2WgogTKKbnAImsaL0NBwM2y7_6LHhFHbSJJ9ZwLXuUy1Y-k7F46baEL5tz5zYwM_vXOJCZ3hnXl6vBiK0hCGz7C0rDoqYc9a768vnfxL4A" />
+<link rel="stylesheet" media="all" href="../../sites/default/files/css/css_H4erypUbmglST6_TKPz7gvVoYm_jwfzs8hDP_SJKzbQ0ec5.css?delta=1&amp;language=nl&amp;theme=sow_work_theme&amp;include=eJxdjFEKxCAMBS8U9EglbtJWGo0kutI9_ULpUtif4TEMD4m6Yj0j3iOsprXDS40j2WgogTKKbnAImsaL0NBwM2y7_6LHhFHbSJJ9ZwLXuUy1Y-k7F46baEL5tz5zYwM_vXOJCZ3hnXl6vBiK0hCGz7C0rDoqYc9a768vnfxL4A" />
+
+      <script src="../../libraries/klaro/dist/klaro-no-translations-no-css2981.js?t0m7c9" defer id="klaro-js"></script>
+
+        
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/titilliumweb/titilliumweb-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/titilliumweb/titilliumweb-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/titilliumweb/titilliumweb-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../themes/custom/sow_work_theme/fonts/iconfont/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+        
+</head>
+<body class="lang-nl section-nl path-node page-node-type-resource logo--animated nav-shown">
+<a href="#main-content" class="visually-hidden focusable skip-link">
+  Skip to main content
+</a>
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+<div class="page-wrapper">
+  <div id="sticky-anchor"></div>
+
+      
+  <div class="big-header-wrapper" id="sticky">
+          <div class="top-header-wrapper">
+        <div class="top-header">
+          <div class="top-header-content">
+              <div>
+    <div class="language-switcher-language-url block-languageswitcher" id="block-languageswitcher" role="navigation">
+  
+  
+      <ul class="links"><li hreflang="nl" data-drupal-link-system-path="node/49" class="nl is-active" aria-current="page"><a href="een-ddos-aanval.html" class="language-link is-active" hreflang="nl" data-drupal-link-system-path="node/49" aria-current="page">nl</a></li><li hreflang="fr" data-drupal-link-system-path="node/49" class="fr"><a href="../../fr/tools-resources/attaque-ddos.html" class="language-link" hreflang="fr" data-drupal-link-system-path="node/49">fr</a></li><li hreflang="de" data-drupal-link-system-path="node/49" class="de"><a href="../../de/tools-resources/ddos-attack.html" class="language-link" hreflang="de" data-drupal-link-system-path="node/49">de</a></li><li hreflang="en" data-drupal-link-system-path="node/49" class="en"><a href="../../tools-resources/ddos-attack.html" class="language-link" hreflang="en" data-drupal-link-system-path="node/49">en</a></li></ul>
+  </div>
+
+  </div>
+
+            <div class="top-header-link-wrapper">
+              <span class="link-gov">Andere informatie en diensten van de overheid: <a href="https://www.belgium.be/" target="_blank">www.belgium.be</a></span>
+              <img class="img-gov" src="../../themes/custom/sow_work_theme/images/header/blgm_beLogo.svg" width="30" height="24" loading="eager"/>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="big-header">
+      <div class="logo-wrapper">
+        <a href="../../nl.html" class="logo">
+          <img src="../../themes/custom/sow_work_theme/logo.svg" alt="Logo" width="141" height="40" loading="eager">
+        </a>
+      </div>
+      <button class="menu-toggle menu-burger hide-for-large">
+        <span class="burger-inner">
+        <span></span><span></span><span></span></span>
+      </button>
+      <div class="nav-wrapper show-for-large">
+                  <div class="meta-header">
+              <div>
+    <nav role="navigation" aria-labelledby="block-sow-work-theme-main-menu-menu" id="block-sow-work-theme-main-menu" class="block-sow-work-theme-main-menu">
+            
+  <h2 class="block-title visually-hidden" id="block-sow-work-theme-main-menu-menu">Main navigation</h2>
+  
+
+        
+  
+                              
+    <ul data-region="meta_header" class="menu large-horizontal main-menu-nav mega-menu" data-responsive-menu="accordion large-dropdown">
+  
+                
+      <li>
+        <a href="../tools-resources.html" data-drupal-link-system-path="tools-resources">Tools &amp; Bronnen</a>
+
+                                                                                              
+                
+                
+              </li>
+                
+      <li>
+        <a href="../support.html" data-drupal-link-system-path="support">Ondersteuning</a>
+
+                                                                                              
+                
+                
+              </li>
+                
+      <li>
+        <a href="../over-ons.html" data-drupal-link-system-path="node/34">Over ons</a>
+
+                                                                                              
+                
+                
+              </li>
+                
+      <li>
+        <a href="../contact.html" data-drupal-link-system-path="node/33">Contact</a>
+
+                                                                                              
+                
+                
+              </li>
+    
+          </ul>
+    
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-save-my-organisation-nav-menu" id="block-save-my-organisation-nav" class="block-save-my-organisation-nav">
+            
+  <h2 class="block-title visually-hidden" id="block-save-my-organisation-nav-menu">Save my organisation</h2>
+  
+
+        
+              <ul class="menu">
+              <li>
+        <a href="../register-my-organisation.html" class="button" data-drupal-link-system-path="node/136">Mijn organisatie registreren</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+          </div>
+              </div>
+    </div>
+          <div class="mobile-nav hide-for-large" id="mobile-nav">
+          <div class="menu-wrapper">
+              <div class="menu--header">
+                  <div class="menu--logo-wrapper">
+                      <a href="../../nl.html" class="logo">
+                          <img src="../../themes/custom/sow_work_theme/images/logo-white.svg" alt="Logo" width="138" height="40" loading="lazy">
+                      </a>
+                  </div>
+                  <button class="close-button" aria-label="Close modal" type="button">
+                      <span aria-hidden="true" class="icon-close"></span>
+                  </button>
+              </div>
+              <div class="menu--links-wrapper">
+                    <div>
+    <nav role="navigation" aria-labelledby="block-main-nav-mobile-menu" id="block-main-nav-mobile" class="block-main-nav-mobile">
+            
+  <h2 class="block-title visually-hidden" id="block-main-nav-mobile-menu">Main navigation</h2>
+  
+
+        
+  
+                              
+          <ul data-region="mobile_nav" class="menu large-horizontal" data-responsive-menu="accordion large-dropdown data-accordion-menu" data-submenu-toggle="true">
+    
+          <li>
+        <a href="../tools-resources.html" data-drupal-link-system-path="tools-resources">Tools &amp; Bronnen</a>
+
+                                                                                              
+                
+                
+              </li>
+          <li>
+        <a href="../support.html" data-drupal-link-system-path="support">Ondersteuning</a>
+
+                                                                                              
+                
+                
+              </li>
+          <li>
+        <a href="../over-ons.html" data-drupal-link-system-path="node/34">Over ons</a>
+
+                                                                                              
+                
+                
+              </li>
+          <li>
+        <a href="../contact.html" data-drupal-link-system-path="node/33">Contact</a>
+
+                                                                                              
+                
+                
+              </li>
+    
+            </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-save-my-organisation-nav-mobile-menu" id="block-save-my-organisation-nav-mobile" class="block-save-my-organisation-nav-mobile">
+            
+  <h2 class="block-title visually-hidden" id="block-save-my-organisation-nav-mobile-menu">Save my organisation</h2>
+  
+
+        
+              <ul class="menu">
+              <li>
+        <a href="../register-my-organisation.html" class="button" data-drupal-link-system-path="node/136">Mijn organisatie registreren</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+              </div>
+          </div>
+          <div class="menu--overlay"></div>
+      </div>
+      </div>
+
+  <a href="#main-content" class="visually-hidden focusable skip-link">
+    Skip to main content
+  </a>
+
+    <div id="region-breadcrumb" class="region-breadcrumb">
+    <div class="row">
+        <div>
+    <div class="views-element-container block-sow-work-theme-views-block-announcement-banner" id="block-sow-work-theme-views-block-announcement-banner">
+  
+  
+      <div>
+
+<div class="announcement-list js-view-dom-id-f6bf2018e3db55fc4ca12621a3bba16932ca6d653da410d0308270a682b37d61 js-announcement-session">
+  
+  
+  
+
+  
+  
+  
+
+    <div class="announcement--msg--slider-wrapper js-loading-announcement-list ">
+      <div class="announcement--swiper">
+        <div  class="swiper-wrapper">
+              <div class="views-row swiper-slide">
+<article id="node-191"  class="announcement--msg">
+  <div class="announcement--msg--container txt-only">
+    <div class="announcement--msg--txt">
+      
+      <h2 class="announcement--msg--title">
+        <span>NIS2: Bent u in het toepassingsgebied?</span>
+
+      </h2>
+      
+              <div class="announcement--msg--content ">
+          
+            <div class="field field--node-field-announcement-content field--name-field-announcement-content field--type-text-long field--label-hidden field__item"><p><span style="white-space:pre-wrap;">De nieuwe Belgische cybersecurity-wet is nu van kracht.</span></p></div>
+      
+
+        </div>
+          </div>
+        <div class="announcement--msg--other">
+                    <div class="announcement--msg--btn">
+          
+          
+
+                                                                      <a href="nis2-snelstartgids.html" class="button" target="">Lees meer</a>
+                    
+      
+
+        </div>
+          </div>
+      </div>
+</article>
+</div>
+    <div class="views-row swiper-slide">
+<article id="node-190"  class="announcement--msg">
+  <div class="announcement--msg--container txt-only">
+    <div class="announcement--msg--txt">
+      
+      <h2 class="announcement--msg--title">
+        <span>Zijn je online accounts goed beschermd?</span>
+
+      </h2>
+      
+              <div class="announcement--msg--content ">
+          
+            <div class="field field--node-field-announcement-content field--name-field-announcement-content field--type-text-long field--label-hidden field__item"><p><span style="white-space:pre-wrap;">Gebruik waar mogelijk Multifactor Authenticatie.</span></p></div>
+      
+
+        </div>
+          </div>
+        <div class="announcement--msg--other">
+                    <div class="announcement--msg--btn">
+          
+          
+
+                                                                      <a href="../recent-news-tips-and-warning/safeonweb-campagne-2024.html" class="button" target="">Meer informatie</a>
+                    
+      
+
+        </div>
+          </div>
+      </div>
+</article>
+</div>
+
+        </div>
+        <div class="announcement-swiper-pagination"></div>
+      </div>
+      <button class="announcement--msg--close icon-close-s" type="button"></button>
+    </div>
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<div id="block-breadcrumbs" class="block-breadcrumbs">
+  
+  
+        <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+    <div class="breadcrumb__content">
+      <ol class="breadcrumb__list">
+                  <li class="breadcrumb__item">
+                                          <a href="../../nl.html" class="home-link icon-home breadcrumb__link"></a>
+                                    </li>
+                  <li class="breadcrumb__item">
+                                          <a href="../tools-resources.html" class="breadcrumb__link">Tools en bronnen</a>
+                                    </li>
+                  <li class="breadcrumb__item">
+                                        <div class="last-crumb">Een DDoS-aanval</div>
+                                    </li>
+              </ol>
+    </div>
+  </nav>
+
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+        <header class="row hero--region" role="banner" aria-label="Site header">
+                    <div class="large-12 columns">
+            <div>
+    <div class="views-element-container block-views-block-hero-hero" id="block-views-block-hero-hero">
+  
+  
+      <div><div class="js-view-dom-id-af27b86abd9b361b7ce52c2ea29daf452c331d529daa401926af4ad77c2431c3">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row">
+
+<article  class="resource--hero hero">
+  <div class="hero--inner">
+          <div class="hero--img">
+        
+            <div class="field field--node-field-resource-img field--name-field-resource-img field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+  <div class="field field--media-field-media-image field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field-label show-for-sr">Image</div>
+                  <div class="field__item">    <picture>
+                  <source srcset="/sites/default/files/styles/hero_wide_1_4/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=UMdrC_4q 1x, /sites/default/files/styles/hero_wide_1_4_x2/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=Lzb4fncI 2x" media="all and (min-width: 1600px)" type="image/webp" width="1920" height="480"/>
+              <source srcset="/sites/default/files/styles/hero_1_4_xxl/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=kRgBeHCH 1x, /sites/default/files/styles/hero_1_4_xxl_x2/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=Jydna9Oz 2x" media="all and (min-width: 1280px)" type="image/webp" width="1600" height="400"/>
+              <source srcset="/sites/default/files/styles/hero_large_1_4/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=5T2UNVs3 1x, /sites/default/files/styles/hero_large_1_4_x2/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=Ab6kV3D5 2x" media="all and (min-width: 768px)" type="image/webp" width="1024" height="256"/>
+              <source srcset="/sites/default/files/styles/hero_xl_1_4/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=kG2fecpV 1x, /sites/default/files/styles/hero_xl_1_4_x2/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=dQMAIubD 2x" media="all and (min-width: 1024px)" type="image/webp" width="1280" height="320"/>
+              <source srcset="/sites/default/files/styles/banner_hero_mlarge/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=_bBBoY_L 1x, /sites/default/files/styles/banner_hero_mlarge_2x/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=pWqxwRSi 2x" media="all and (min-width: 640px)" type="image/webp" width="768" height="384"/>
+              <source srcset="/sites/default/files/styles/banner_hero_small/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=QtZTIvg6 1x, /sites/default/files/styles/banner_hero_small_2x/public/2023-04/cyberspace-2784907_1280.webp?h=1c9b88c9&amp;itok=SEjsaeg4 2x" type="image/webp" width="640" height="320"/>
+              <source srcset="/sites/default/files/styles/hero_wide_1_4/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=UMdrC_4q 1x, /sites/default/files/styles/hero_wide_1_4_x2/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=Lzb4fncI 2x" media="all and (min-width: 1600px)" type="image/jpeg" width="1920" height="480"/>
+              <source srcset="/sites/default/files/styles/hero_1_4_xxl/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=kRgBeHCH 1x, /sites/default/files/styles/hero_1_4_xxl_x2/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=Jydna9Oz 2x" media="all and (min-width: 1280px)" type="image/jpeg" width="1600" height="400"/>
+              <source srcset="/sites/default/files/styles/hero_large_1_4/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=5T2UNVs3 1x, /sites/default/files/styles/hero_large_1_4_x2/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=Ab6kV3D5 2x" media="all and (min-width: 768px)" type="image/jpeg" width="1024" height="256"/>
+              <source srcset="/sites/default/files/styles/hero_xl_1_4/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=kG2fecpV 1x, /sites/default/files/styles/hero_xl_1_4_x2/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=dQMAIubD 2x" media="all and (min-width: 1024px)" type="image/jpeg" width="1280" height="320"/>
+              <source srcset="/sites/default/files/styles/banner_hero_mlarge/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=_bBBoY_L 1x, /sites/default/files/styles/banner_hero_mlarge_2x/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=pWqxwRSi 2x" media="all and (min-width: 640px)" type="image/jpeg" width="768" height="384"/>
+              <source srcset="/sites/default/files/styles/banner_hero_small/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=QtZTIvg6 1x, /sites/default/files/styles/banner_hero_small_2x/public/2023-04/cyberspace-2784907_1280.jpg?h=1c9b88c9&amp;itok=SEjsaeg4 2x" type="image/jpeg" width="640" height="320"/>
+                  <img loading="eager" width="1638" height="409" src="../../sites/default/files/styles/hero_large_1_4_x2/public/2023-04/cyberspace-2784907_12802d78.jpg?h=1c9b88c9&amp;itok=Ab6kV3D5" alt="image" />
+
+  </picture>
+
+</div>
+              </div>
+
+
+  </article>
+</div>
+      
+
+      </div>
+        <div class="hero--content-wrapper">
+              <div class="hero--content-txt">
+                  <div class="surtitle">
+            
+            <div class="field field--node-field-resource-type field--name-field-resource-type field--type-entity-reference field--label-hidden field__item">Veelvoorkomende bedreigingen</div>
+      
+
+          </div>
+                          <h1 class="hero--title"><span>Een DDoS-aanval</span>
+</h1>
+                </div>
+                          <div class="hero--datas">
+                                          <div class="hero--time icon-time">
+              Leestijd:
+            <div content="9" class="field field--node-field-resource-reading-time field--name-field-resource-reading-time field--type-integer field--label-hidden field__item">9min</div>
+      
+
+            </div>
+                  </div>
+                      </div>
+  </div>
+
+</article>
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+          </header>
+  
+  
+  
+  
+              <div class="row">
+              <main id="main" class="cell columns main-js" role="main">
+                  <div class="region-highlighted panel"><div data-drupal-messages-fallback class="hidden"></div></div>                <a id="main-content"></a>
+        <section>
+          
+        </section>
+        <section>
+          
+        </section>
+        <section>
+            <div>
+    <div id="block-sow-work-theme-content" class="block-sow-work-theme-content">
+  
+  
+                                         <article id="node-49"  class="has-summary resource-content grid-container-summary paragraph-spacing-small">
+  
+  
+  <div class="addtoany">
+  <span class="a2a_kit addtoany_list" data-a2a-url="" data-a2a-title="">
+    <a class="a2a_button_linkedin" target="_blank" rel="nofollow noopener" href="../../index.html#linkedin">
+      <span class="a2a_svg a2a_s__default a2a_s_linkedin" style="background-color: white;">
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.41503 1.83742C3.39555 0.953373 2.76336 0.280029 1.73678 0.280029C0.710204 0.280029 0.0390625 0.953373 0.0390625 1.83742C0.0390625 2.70316 0.690367 3.39589 1.69783 3.39589H1.71701C2.76336 3.39589 3.41503 2.70316 3.41503 1.83742Z" fill="#0077B5"/>
+          <path d="M3.21653 4.6266H0.21566V13.643H3.21653V4.6266Z" fill="#0077B5"/>
+          <path d="M10.5839 4.41468C12.5586 4.41468 14.0391 5.70362 14.0391 8.47306L14.0389 13.6428H11.0382V8.819C11.0382 7.60738 10.604 6.7806 9.51762 6.7806C8.68857 6.7806 8.19476 7.33797 7.97787 7.87631C7.89853 8.06924 7.87905 8.33805 7.87905 8.60752V13.643H4.87782C4.87782 13.643 4.91738 5.47269 4.87782 4.62664H7.87905V5.90373C8.27734 5.28981 8.99067 4.41468 10.5839 4.41468Z" fill="#0077B5"/>
+        </svg>
+      </span>
+      <span class="a2a_label">LinkedIn</span>
+    </a>
+    <a class="a2a_button_facebook" target="_blank" rel="nofollow noopener" href="../../index.html#facebook">
+      <span class="a2a_svg a2a_s__default a2a_s_facebook" style="background-color: white;">
+        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.28186 16V7.99906H7.524L7.82113 5.2419H5.28186L5.28567 3.86191C5.28567 3.1428 5.35503 2.75748 6.40356 2.75748H7.80526V0H5.5628C2.86924 0 1.92118 1.33752 1.92118 3.58682V5.24221H0.242188V7.99938H1.92118V16H5.28186Z" fill="#1877F2"/>
+        </svg>
+      </span>
+      <span class="a2a_label">Facebook</span>
+    </a>
+    <a class="a2a_button_x" target="_blank" rel="nofollow noopener" href="../../index.html#twitter">
+      <span class="a2a_svg a2a_s__default a2a_s_x" style="background-color: white;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="m3.48 4 6.611 8.825L3.44 20h1.497l5.824-6.282L15.466 20h5.095l-6.982-9.321L19.77 4h-1.498L12.91 9.785 8.576 4H3.48Zm2.202 1.101h2.34L18.36 18.9h-2.34L5.681 5.1Z" fill="#000000"/>
+        </svg>
+      </span>
+      <span class="a2a_label">X</span>
+    </a>
+  </span>
+</div>
+    
+  <div class="anchors-menu">
+    <div class="menu-wrapper">
+      <h2 class="icon-menu anchors-wrapper-title">
+        Inhoudsopgave
+      </h2>
+      <div class="anchors-wrapper">
+                                                                    <div class="anchors-item">
+                  
+  
+              </div>
+                                                              <div class="anchors-item">
+                  
+  
+              </div>
+                                                                                    <div class="anchors-item">
+                  
+  
+              </div>
+                                                                                                                                <div class="anchors-item">
+                  
+  
+              </div>
+                                                                                </div>
+    </div>
+  </div>
+
+    <div class="view-mode-full">
+          <div class="resource--intro content--intro">
+        
+            <div class="field field--node-field-resource-intro field--name-field-resource-intro field--type-text-long field--label-hidden field__item"><p>In de huidige digitale samenleving waarin bijna alle diensten de klok rond beschikbaar zijn, kan een aanval die de beschikbaarheid verstoort, grote gevolgen hebben voor de bedrijfsactiviteiten van organisaties. Een denial-of-service- of DDoS-aanval heeft tot doel een server ontoegankelijk te maken om een storing te veroorzaken of de werking van de dienst ernstig te verstoren. Dit artikel geeft een overzicht van wat je moet doen wanneer je organisatie te maken krijgt met een dergelijke aanval en hoe je je ertegen kunt beschermen.</p></div>
+      
+
+      </div>
+        
+      <div class="field field--node-field-resource-content field--name-field-resource-content field--type-entity-reference-revisions field--label-hidden paragraph--entity-ref--wrapper field__items">
+          
+    
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default">
+          <h2 class="content--title">Wat is een DDoS-aanval?</h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><p>Een Distributed Denial of Service (DDoS)-aanval verstoort de normale werking van de webhost of -server van een organisatie door deze te overbelasten met een enorme hoeveelheid paginaverzoeken. In het echte leven is dat te vergelijken met een monsterfile: een auto wil van punt A naar punt B, maar andere auto's blijven tussen hem en de eindbestemming komen, zodat hij vast komt te zitten. De denial of service-aanval maakt de webpagina en de diensten ze levert onbeschikbaar totdat de aanval stopt, wat kan leiden tot een aanzienlijk financieel en productiviteitsverlies voor de organisatie omdat ze deze diensten niet meer kan aanbieden.</p></div>
+      
+
+    </div>
+      </div>
+
+          
+    
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default">
+          <h2 class="content--title">Hoe identificeer je een DDoS-aanval?</h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><p>Een goed uitgangspunt is <strong>naar je eigen websites surfen als was je een externe gebruiker</strong>. Als de website onbeschikbaar is, kan dat erop wijzen dat ze gecompromitteerd is en dat het om een DDoS-aanval gaat. De IT-verantwoordelijke moet een onderzoek instellen om de oorzaak van de onbeschikbaarheid van de website vast te stellen en het type aanval te bepalen.</p>
+
+<p>Daarnaast kunnen detectiemiddelen worden ingesteld om vast te stellen of een indringing aan de gang is of al heeft plaatsgevonden. <strong>Het monitoren van alle kritieke systemen die de werking van een organisatie garanderen</strong>, is van cruciaal belang om te zorgen voor een goed beschermingsniveau tegen een websitehack. Als er daadwerkelijk iets aan de hand is, kunnen de IT-verantwoordelijke en zijn team worden gewaarschuwd via meldingen die ze vooraf hebben ingesteld. Daarnaast bestaan er verschillende websitebewakingstools die kunnen helpen bij het opsporen van (inhoudelijke) wijzigingen van een website, zoals een aanvaller die probeert de website te linken aan nieuw opgezette domeinen.</p>
+
+<p>Wanneer een organisatie overweegt websitebewakingstools te implementeren, is het belangrijk om de kosten af te wegen tegen de baten. Er zijn doorgaans drie aspecten die deze tools kunnen controleren: beschikbaarheid, snelheid en inhoud. Er bestaat echter geen pasklare oplossing. De totale kosten zullen afhangen van hoe zwaar en regelmatig een organisatie de inhoud van haar website wil bewaken. Dat is verschillend voor elke organisatie, afhankelijk van de behoeften en eisen: als de website een sleutelelement is voor het uitvoeren van de dagelijkse werkzaamheden of het verlenen van diensten aan klanten, is het beter om te investeren in websitebewakingstools.</p></div>
+      
+
+    </div>
+      </div>
+
+          
+  <div class="paragraph paragraph--type--info paragraph--view-mode--default paragraph--info has-bg-img paragraph-spacing no-title">
+                          <span class="icon-info-circle icon"></span>
+                      <div class="info--content--wrapper">
+          
+            <div class="field field--paragraph-field-info-content field--name-field-info-content field--type-text-long field--label-hidden field__item"><p>Websitebewakingstools zijn dus zeer waardevol, maar de gekozen oplossing moet door de IT-verantwoordelijke van de organisatie worden gevalideerd vanuit het oogpunt van veiligheid en prestaties.</p></div>
+      
+
+        </div>
+            </div>
+
+          
+    
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default">
+          <h2 class="content--title">Hoe bescherm je een website tegen een DDoS-aanval?</h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><h3>1.&nbsp;&nbsp; &nbsp;Activeer en configureer een Web Application Firewall</h3>
+
+<p>De Web Application Firewall controleert inkomend en uitgaand netwerkverkeer om communicatie toe te staan of te weigeren op basis van gedefinieerde beveiligingsregels. Hij fungeert als een controleur tussen de server en de client en door het verkeer te ontsleutelen analyseert hij de verzoeken van de gebruikers om toegang tot het netwerk. Als hij dan volgens zijn configuratieregels iets verdachts detecteert, kan hij meldingen genereren en naar de IT-verantwoordelijke en zijn team sturen, die vervolgens beslissen welke acties er moeten worden ondernomen.</p>
+</div>
+      
+
+    </div>
+      </div>
+
+          
+  <div class="paragraph paragraph--type--info paragraph--view-mode--default paragraph--info has-bg-img paragraph-spacing no-title">
+                          <span class="icon-info-circle icon"></span>
+                      <div class="info--content--wrapper">
+          
+            <div class="field field--paragraph-field-info-content field--name-field-info-content field--type-text-long field--label-hidden field__item"><p>De Web Application Firewall beschermt tegen aanvallen vanaf het web. Hij dient niet ter vervanging van een perimeter firewall, die onbevoegde toegang blokkeert en aanvallen van andere toegangspunten detecteert.</p></div>
+      
+
+        </div>
+            </div>
+
+          
+    
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default">
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><h3>2.&nbsp;&nbsp; &nbsp;Update alle software, besturingssystemen en internetbrowsers</h3>
+
+<p>Cybercriminelen zoeken altijd naar kwetsbaarheden om uit te buiten, dus het is belangrijk om alle systemen up-to-date te houden. Op die manier wordt steeds de laatste en veiligere versie ge&#239;nstalleerd.</p>
+
+<h3>3.&nbsp;&nbsp; &nbsp;Hou alle webservercomponenten up-to-date</h3>
+
+<p>Zoals voor alle informatie- en technologiesystemen zijn ook updates van websitecomponenten van cruciaal belang om ervoor te zorgen dat bekende kwetsbaarheden worden verholpen, zodat hackers geen kans krijgen om ze uit te buiten.</p>
+
+<p>De typische componenten van een webserver omvatten:</p>
+
+<ul>
+	<li>de BIOS/firmware van de hardware waarop de organisatieserver draait;</li>
+	<li>het besturingssysteem van de server;</li>
+	<li>de gebruikte webservice (bv. Apache, nginx, IIS etc..);</li>
+	<li>het content management-systeem (bv. Drupal, Joomla, WordPress etc.);</li>
+	<li>optioneel de virtualisatielaag.</li>
+</ul>
+
+<p>Zeer weinig organisaties bouwen hun website vanaf nul. Ze doen meestal een beroep op derden, die een grote hoeveelheid plug-ins en thema's aanbieden. Zorg ervoor dat die ook up-to-date zijn. De ontwikkelaars van derden zijn voortdurend op zoek naar nieuwe kwetsbaarheden. Het uitvoeren van updates is dus cruciaal om over de minst kwetsbare versie van de gebruikte componenten te beschikken.</p>
+
+<h3>4.&nbsp;&nbsp; &nbsp;Beveilig de toegang tot en update het content management-systeem &nbsp;</h3>
+
+<p>Zoals eerder vermeld, is een van de belangrijke stappen om een content management-systeem te beveiligen, het up-to-date houden van het systeem en de plug-ins. Cybercriminelen zijn altijd op zoek naar nieuwe kwetsbaarheden om uit te buiten, maar er worden beveiligingspatches uitgebracht om die kwetsbaarheden te verhelpen. Het is dus belangrijk om de updates te installeren zodra ze beschikbaar zijn.</p>
+
+<p>Daarnaast kan het content management-systeem worden beschermd door geen gebruik te maken van de standaardconfiguratie voor accounts en wachtwoorden, maar een eigen admin-account aan te maken met een voldoende sterk wachtwoord, aangevuld met multifactorauthenticatie. Bij multifactorauthenticatie moet een gebruiker ten minste twee verschillende methoden hanteren (bv. wachtwoorden en pincode, pincode en een code via sms) om de identiteit te verifi&#235;ren en toegang te krijgen tot de bron die hij probeert te raadplegen.</p>
+
+<p>Ten slotte moet het toegangsbeheerproces voorzien in een regelmatige herziening van de gebruikerslijst. Dit geldt niet alleen voor gebruikers die toegang hebben tot het content management-systeem, maar ook voor alle andere gebruikers binnen de organisatie in het algemeen. Door deze herziening kan de organisatie nagaan of er geen testgebruikers meer actief zijn, en of er geen onnodige gebruikers zijn toegevoegd.</p>
+
+<h3>5.&nbsp;&nbsp; &nbsp;Gebruik sterke wachtwoorden en multifactorauthenticatie</h3>
+
+<p>Mensen hebben de neiging zwakke wachtwoorden te gebruiken omdat die gemakkelijker te onthouden zijn. Een gemakkelijk te onthouden wachtwoord is echter ook gemakkelijk te hacken. Het is dus belangrijk om alleen sterke wachtwoorden toe te staan, die hoofdletters en kleine letters, cijfers en symbolen bevatten. Daarnaast voegt multifactorauthenticatie een extra laag toe om de accounts te beschermen.</p>
+
+<h3>6.&nbsp;&nbsp; &nbsp;Verzeker je ervan dat je internetprovider duidelijke procedures heeft om op een aanval te reageren en deze te voorkomen</h3>
+
+<p>Het is belangrijk om te bepalen of je organisatie rechtstreeks met het internet verbonden is, dan wel of ze een Internet Service Provider (ISP) gebruikt. Als er een contract is met een Internet Service Provider, kijk dit contract grondig na en ga na wat hun procedures zijn in geval van een aanval. Internet Service Providers vormen de poort tussen een organisatie en het internet. Dat leidt tot steeds meer bezorgdheid over DDoS-aanvallen en de complexiteit ervan. De meeste providers investeren fors in het voorkomen van die aanvallen.</p>
+
+<p>Als jouw organisatie haar eigen netwerken beheert, denk er dan aan om verschillende beveiligingszones in het netwerk te cre&#235;ren (bv. basisnetwerksegmentatie door middel van VLAN's of andere mechanismen voor netwerktoegangscontrole) en controleer/bewaak het verkeer tussen deze zones. Zorg er daarnaast voor dat ongebruikte diensten worden uitgeschakeld of uit het netwerk worden gefilterd en laat nooit het standaardwachtwoord op de internetrouter of andere systemen staan. Ten slotte moeten besturingssystemen, programma's en routers automatisch worden bijgewerkt.</p>
+
+<h3>7.&nbsp;&nbsp; &nbsp;Beperk het aantal paginaverzoeken per gebruiker</h3>
+
+<p>Beperk het aantal paginaverzoeken dat een gebruiker kan verzenden, bijvoorbeeld tot duizend verzoeken per persoon per 24 uur. Dat beperkt de mogelijkheid dat het netwerk overbelast wordt.</p>
+
+<h3>8.&nbsp;&nbsp; &nbsp;Verkies clouddiensten boven lokaal gehoste diensten</h3>
+
+<p>Clouddiensten zijn veel beter beschermd tegen DDoS-aanvallen dan lokaal gehoste diensten, vooral als het gaat om e-maildiensten of andere online platforms. De extra beschermingslaag die de cloud biedt, is dat de diensten ruim beschikbaar blijven.</p>
+
+<h3>9.&nbsp;&nbsp; &nbsp;Analyseer de website om de meest voorkomende kwetsbaarheden op te sporen</h3>
+
+<p>Een website testen op bekende kwetsbaarheden is een goede manier om vast te stellen of ze vanuit beveiligingsoogpunt klaar is om live te gaan of niet. Door de bestaande kwetsbaarheden te identificeren, is er meer tijd om ze te verhelpen voordat een cybercrimineel ze gebruikt en daadwerkelijk aanzienlijke schade veroorzaakt. Beveiligingsexperts kunnen bijstand verlenen door bijvoorbeeld penetratietests en audits uit te voeren om de veiligheid van een website te beoordelen.</p>
+</div>
+      
+
+    </div>
+      </div>
+
+            
+
+
+  <div class="paragraph--media has-bg-img paragraph-spacing paragraph paragraph--type--image paragraph--view-mode--default  ">
+          
+            <div class="field field--paragraph-field-img field--name-field-img field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+  <div class="field field--media-field-media-image field--name-field-media-image field--type-image field--label-visually_hidden">
+    <div class="field-label show-for-sr">Image</div>
+                  <div class="field__item">    <picture>
+                  <source srcset="/sites/default/files/styles/image_content_large/public/2023-05/pexels-picjumbocom-461077.webp?itok=eB9OvV62 1x, /sites/default/files/styles/image_content_large_x2/public/2023-05/pexels-picjumbocom-461077.webp?itok=Bb-7hWeW 2x" media="all and (min-width: 768px)" type="image/webp" width="768" height="512"/>
+              <source srcset="/sites/default/files/styles/image_content_medium/public/2023-05/pexels-picjumbocom-461077.webp?itok=pCOgNTfa 1x, /sites/default/files/styles/image_content_medium_x2/public/2023-05/pexels-picjumbocom-461077.webp?itok=tCyPS5yh 2x" media="all and (min-width: 640px)" type="image/webp" width="544" height="363"/>
+              <source srcset="/sites/default/files/styles/image_content_small/public/2023-05/pexels-picjumbocom-461077.webp?itok=spUF_pCH 1x, /sites/default/files/styles/image_content_small_x2/public/2023-05/pexels-picjumbocom-461077.webp?itok=hOH9rLa4 2x" type="image/webp" width="590" height="393"/>
+              <source srcset="/sites/default/files/styles/image_content_large/public/2023-05/pexels-picjumbocom-461077.jpg?itok=eB9OvV62 1x, /sites/default/files/styles/image_content_large_x2/public/2023-05/pexels-picjumbocom-461077.jpg?itok=Bb-7hWeW 2x" media="all and (min-width: 768px)" type="image/jpeg" width="768" height="512"/>
+              <source srcset="/sites/default/files/styles/image_content_medium/public/2023-05/pexels-picjumbocom-461077.jpg?itok=pCOgNTfa 1x, /sites/default/files/styles/image_content_medium_x2/public/2023-05/pexels-picjumbocom-461077.jpg?itok=tCyPS5yh 2x" media="all and (min-width: 640px)" type="image/jpeg" width="544" height="363"/>
+              <source srcset="/sites/default/files/styles/image_content_small/public/2023-05/pexels-picjumbocom-461077.jpg?itok=spUF_pCH 1x, /sites/default/files/styles/image_content_small_x2/public/2023-05/pexels-picjumbocom-461077.jpg?itok=hOH9rLa4 2x" type="image/jpeg" width="590" height="393"/>
+                  <img loading="lazy" width="768" height="512" src="../../sites/default/files/styles/image_content_large/public/2023-05/pexels-picjumbocom-4610771f80.jpg?itok=eB9OvV62" alt="image" />
+
+  </picture>
+
+</div>
+              </div>
+
+
+  </article>
+</div>
+      
+
+            </div>
+
+          
+    
+
+
+  <div class="paragraph--content-paragraph paragraph-spacing paragraph paragraph--type--content paragraph--view-mode--default">
+          <h2 class="content--title">Wat moet je doen in het geval van een DDoS-aanval op je website?</h2>
+            <div class="content--body">
+      
+            <div class="field field--paragraph-field-content-txt field--name-field-content-txt field--type-text-long field--label-hidden field__item"><h3>1.&nbsp;&nbsp; &nbsp;Meld het incident aan de IT-verantwoordelijke van de organisatie</h3>
+
+<p>Zodra een ongebruikelijke verandering op de website wordt vermoed, moet dit onmiddellijk worden gemeld aan de IT-verantwoordelijke binnen de organisatie, zodat deze de nodige herstelstappen kan nemen.</p>
+
+<h3>2.&nbsp;&nbsp; &nbsp;Verzamel alle noodzakelijke forensische gegevens</h3>
+
+<p>Een DDoS-aanval is een cybermisdaad die bij de politie moet worden aangegeven. Om een klacht in te dienen, kan je verschillende elementen verzamelen om het dossier aan te vullen: screenshots van de aangevallen website, screenshots van alles wat vreemd lijkt op de apparaten en logbestanden van de firewall en de servers.</p>
+
+<h3>3.&nbsp;&nbsp; &nbsp;Maak een kopie van alle gecompromitteerde apparaten</h3>
+
+<p>Indien mogelijk moeten alle ge&#239;nfecteerde apparaten voor forensische doeleinden op een fysieke drager worden gekopieerd.</p>
+
+<h3>4.&nbsp;&nbsp; &nbsp;Meld het incident bij de politie en dien een klacht in</h3>
+
+<p>Een DDoS-aanval is strafbaar en moet aan de autoriteiten worden gemeld, zodat ze de verantwoordelijken kunnen opsporen en voorkomen dat ze andere aanvallen uitvoeren.</p>
+
+<h3>5.&nbsp;&nbsp; &nbsp;Wijzig alle eventueel doorgegeven wachtwoorden &nbsp;</h3>
+
+<p>Deze wachtwoorden moeten worden gewijzigd op alle gebruikte accounts.</p>
+
+<h3>6.&nbsp;&nbsp; &nbsp;Maak een inventaris van alle gevoelige informatie waartoe toegang is verkregen of die is gestolen</h3>
+
+<p>Dit helpt om de omvang van de aanval te beoordelen om te anticiperen op wat de hacker in de toekomst zou kunnen doen om andere aanvallen uit te voeren.</p>
+
+<h3>7.&nbsp;&nbsp; &nbsp;Identificeer en verhelp alle kwetsbaarheden die werden gebruikt om toegang te krijgen</h3>
+
+<p>Door precies te bepalen hoe de aanvaller toegang kreeg tot een bron, kunnen de nodige herstelmaatregelen worden genomen om ervoor te zorgen dat deze kwetsbaarheid niet opnieuw kan worden gebruikt voor andere aanvallen. Dit kan bijvoorbeeld door het installeren van een beveiligingspatch of het wijzigen van een gecompromitteerd wachtwoord.</p>
+
+<h3>8.&nbsp;&nbsp; &nbsp;Informeer de websiteprovider en de Internet Service Provider</h3>
+
+<p>Als er een externe provider betrokken is, moet deze worden gecontacteerd en ge&#239;nformeerd over het incident, zodat deze ook de nodige stappen kan ondernemen om het probleem te verhelpen.</p>
+
+<h3>9.&nbsp;&nbsp; &nbsp;Neem indien nodig contact op met offici&#235;le externe beveiligingsspecialisten</h3>
+
+<p>Niet elke organisatie beschikt over voldoende middelen om een cyberincident effici&#235;nt te verhelpen. Er zijn verschillende beveiligingsspecialisten die kunnen worden ingehuurd om het incident te helpen oplossen. Die specialisten mogen alleen afkomstig zijn van offici&#235;le organisaties, zoals bekende adviesbureaus, om te voorkomen dat er een oplichter wordt ingehuurd.</p>
+</div>
+      
+
+    </div>
+      </div>
+
+            <div class="paragraph paragraph--type--_col-link-content paragraph--view-mode--default paragraph--2col-link-content paragraph-spacing">
+                        <div class="two-col-content-link--links two-col-content--no-txt">
+        <h4 class="two-col-content-link--links-title h6">Meer weten </h4>
+        
+      <div class="field field--paragraph-field-2col-link-content-links field--name-field-2col-link-content-links field--type-entity-reference-revisions field--label-hidden paragraph--entity-ref--wrapper field__items">
+            <div class="paragraph paragraph--type--simple-link paragraph--view-mode--default paragraph--simple-link">
+                  <div class="simple-links--subtitle">
+            <strong>Van Safeonweb</strong>
+        </div>
+                    <ul class="simple-links--list">
+                                      <li class="simple-links-item">
+                  <a href="https://www.safeonweb.be/index.php/nl/de-website-die-ik-wil-bezoeken-niet-beschikbaar" class="icon-link" target="">De website die ik wil bezoeken is niet beschikbaar</a>
+              </li>
+                  </ul>
+            </div>
+
+            <div class="paragraph paragraph--type--simple-link paragraph--view-mode--default paragraph--simple-link">
+                  <div class="simple-links--subtitle">
+            <strong>Aanvullende bronnen voor IT-verantwoordelijken</strong>
+        </div>
+                  </div>
+
+          </div>
+  
+
+      </div>
+            </div>
+
+          
+  <div class="paragraph paragraph--type--info paragraph--view-mode--default paragraph--info has-bg-img paragraph-spacing no-title">
+                          <span class="icon-info-circle icon"></span>
+                      <div class="info--content--wrapper">
+          
+            <div class="field field--paragraph-field-info-content field--name-field-info-content field--type-text-long field--label-hidden field__item"><p>Het doel van deze inhoud is om goede cyberbeveiligingspraktijken te delen en onder de aandacht te brengen.&nbsp;<br>Sommige van deze adviezen kunnen anders van toepassing zijn, afhankelijk van de context van uw organisatie.<br>Houd u altijd aan het beleid en de instructies die binnen uw organisatie van kracht zijn.<br>Vraag bij twijfel altijd eerst advies aan uw IT-manager.</p></div>
+      
+
+        </div>
+            </div>
+
+          </div>
+  
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+        </section>
+              </main>
+
+          </div>
+  
+      <div class="footer-wrapper">
+                              <section id="pre-footer" class="pre-footer pre-footer-protect ">
+              <div>
+      <div class="footer-protect">
+    <div class="row footer-protect--container">
+            <h2 class="footer-protect--title">Registreer je organisatie</h2>
+              <div class="footer-protect--content">
+            <p>Registreer je organisatie om toegang te krijgen tot extra gratis CCB-diensten en haar te beschermen tegen cyberbedreigingen.</p>
+                      <div class="footer-protect--btn">
+              
+      <div class="field field--block-content-field-footer-block-btn field--name-field-footer-block-btn field--type-entity-reference-revisions field--label-hidden paragraph--entity-ref--wrapper field__items">
+          
+
+                                                                      <a href="../register-my-organisation.html" class="button" target="">Mijn organisatie registreren</a>
+                    
+          </div>
+  
+
+            </div>
+                  </div>
+    </div>
+  </div>
+
+  </div>
+
+        </section>
+          <footer class="footer-large">
+                    <div id="footer-middle" class="footer-middle">
+           <div class="footer-second-wrapper global-container">
+  <div class="footer-second-content-wrapper">
+    <div class="footer-logo logo">
+      <a href="../../index.html" class="link-footer-logo">
+        <img src="../../themes/custom/sow_work_theme/images/logo-white.svg" alt="logo website" width="128" height="37" loading="lazy" /></a>
+    </div>
+    <div class="footer-second-description-wrapper">
+      <p>
+        Samen maken we van
+        <span class="baseline--highlight">Belgi&#235; </span>
+         &#233;&#233;n van de
+        <span class="baseline--highlight">minst cyberkwetsbare </span>
+        landen in Europa 
+      </p>
+    </div>
+  </div>
+  <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block-mainnavigation">
+            
+  <h2 class="block-title visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+
+    
+    <ul data-region="footer_middle" class="menu large-horizontal main-menu-nav" data-responsive-menu="accordion large-dropdown">
+                  
+      <li>
+        <a href="../tools-resources.html" data-drupal-link-system-path="tools-resources">Tools &amp; Bronnen</a>
+
+              </li>
+                
+      <li>
+        <a href="../support.html" data-drupal-link-system-path="support">Ondersteuning</a>
+
+              </li>
+                
+      <li>
+        <a href="../over-ons.html" data-drupal-link-system-path="node/34">Over ons</a>
+
+              </li>
+                
+      <li>
+        <a href="../contact.html" data-drupal-link-system-path="node/33">Contact</a>
+
+              </li>
+      </ul>
+    
+
+  </nav>
+
+</div>
+
+        </div>
+                    <div id="footer-last" class="footer-last">
+          <div class="footer-last-wrapper global-container">
+  <div class="footer-credential">
+    <span>&#169; 2025 &nbsp </span>
+    <a href="../../index.html">atwork.safeonweb.be</a>
+    <span>&nbsp Alle rechten voorbehouden.</span>
+    <nav role="navigation" aria-labelledby="block-footerprivracymenu-menu" id="block-footerprivracymenu" class="block-footerprivracymenu">
+            
+  <h2 class="block-title visually-hidden" id="block-footerprivracymenu-menu">Footer privracy menu</h2>
+  
+
+        
+              <ul class="menu">
+              <li>
+        <a href="../persoonsgegevens.html" target="_blank" title="CCB Privacy policy" data-drupal-link-system-path="node/228">Privacybeleid </a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+  <div class="footer-last-logo-wrapper">
+    <h2>Onze andere websites:</h2>
+    <div class="footer-last-logo">
+      <a href="https://ccb.belgium.be/" target="_blank">
+        <img src="../../themes/custom/sow_work_theme/images/footer/ccb-logo.png" alt="cccb.be" width="99" height="30" loading="lazy"/>
+      </a>
+      <a href="https://www.safeonweb.be/" target="_blank">
+        <img src="../../themes/custom/sow_work_theme/images/footer/sow_logo.svg" alt="safeonweb.be" width="97" height="30" loading="lazy"/>
+      </a>
+    <div>
+  </div>
+</div>
+
+        </div>
+          </footer>
+    </div>
+  
+    </div>
+
+  </div>
+
+
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"nl\/","currentPath":"node\/49","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"nl"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxdTdEKwyAQ-6HD-4Z9STmrrVL15E4n3ddPusKgL0lIQkLONaZyIt3CbMKlwZFIGC-ETI0z44-gktAuVIOik14pmb9jeqndpqjBO1Aey2A5lhZ89kilcC_rlHP-ke2JLaWnO5v9VdbAoqCnNp_Rknp4Rz8ULzSZXU8ehrcbS8abjYuUeIdPF7ts89ZRi1zuny8P6GBE","theme":"sow_work_theme","theme_token":null},"ajaxTrustedUrl":[],"klaro":{"config":{"elementId":"klaro","storageMethod":"cookie","cookieName":"klaro","cookieExpiresAfterDays":30,"cookieDomain":"","groupByPurpose":true,"acceptAll":true,"hideDeclineAll":false,"hideLearnMore":true,"additionalClass":" hide-consent-dialog-title klaro-theme-sow_work_theme","htmlTexts":false,"autoFocus":true,"privacyPolicy":"https:\/\/ccb.belgium.be\/nl\/persoonsgegevens","services":[{"name":"cms","default":true,"title":"CMS","description":"Provides a joyful user experience.","purposes":["cms"],"callbackCode":"","cookies":[["has_js","","safeonweb-work.webstanz.be"],["^[SESS|SSESS]","","safeonweb-work.webstanz.be"],["^proxyVisitor","","safeonweb-work.webstanz.be"]],"required":true,"optOut":true,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"nl":{"title":"CMS"}}},{"name":"klaro","default":true,"title":"Klaro!","description":"Saves the status of the users consent.","purposes":["cms"],"callbackCode":"","cookies":[["klaro","","safeonweb-work.webstanz.be"]],"required":true,"optOut":false,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"nl":{"title":"Klaro!"}}},{"name":"matomo","default":false,"title":"Matomo","description":"Matomo is an open-source web analytics platform that allows website owners to collect and analyze information about their visitors\u0027 behavior and engagement on their website. The platform provides insights into visitor demographics, traffic sources, page.","purposes":["analytics"],"callbackCode":"","cookies":[["^_pk_.*$","",""],["piwik_ignore","",""]],"required":false,"optOut":false,"onlyOnce":true,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"nl":{"title":"Matomo"}}},{"name":"unknown_app","default":false,"title":"Unknown Apps","description":"Block unknown external resources","purposes":["external_content"],"callbackCode":"","cookies":[],"required":false,"optOut":false,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"nl":{"title":"Unknown Apps"}}}],"translations":{"nl":{"consentModal":{"title":"Informatie die we verzamelen","description":"Hier kunt u de informatie bekijken en aanpassen die we over u verzamelen.\r\n","privacyPolicy":{"name":"Meer info","text":"Lees ons privacybeleid voor meer informatie {privacyPolicy}.\r\n"}},"consentNotice":{"title":"Use of personal data and cookies","changeDescription":"Er waren wijzigingen sinds uw laatste bezoek, werk uw voorkeuren bij.","description":"Deze website maakt gebruik van functionele cookies. Om uw ervaring te verbeteren, gebruikt deze website ook optionele cookies waarvoor uw toestemming vereist is. {privacyPolicy}","learnMore":"Meer info","privacyPolicy":{"name":"Meer info"}},"ok":"OK","save":"Opslaan","decline":"Afwijzen","close":"Sluiten","acceptAll":"Accept all","acceptSelected":"Accept selected","service":{"disableAll":{"title":"Alle opties in\/uit schakelen","description":"Gebruik deze schakeloptie om alle apps in\/uit te schakelen."},"optOut":{"title":"(afmelden)","description":"Deze app is standaard geladen (maar je kunt je afmelden)"},"required":{"title":"(altijd verplicht)","description":"Deze applicatie is altijd vereist"},"purposes":"Doeleinden","purpose":"Doeleinde"},"contextualConsent":{"acceptAlways":"Always","acceptOnce":"Yes","description":"Do you want to load external content supplied by {title}?"},"poweredBy":"Aangedreven door Klaro!","purposeItem":{"service":"Service","services":"Services"},"privacyPolicy":{"name":"Meer info","text":"Lees ons privacybeleid voor meer informatie {privacyPolicy}.\r\n"},"purposes":{"cms":{"title":"Strictly Necessary Cookies","description":""},"advertising":{"title":"Advertising","description":""},"analytics":{"title":"Performance Cookies","description":""},"security":{"title":"Beveiliging","description":""},"styling":{"title":"Styling","description":""},"external_content":{"title":"External embeds","description":""},"analyti":{"title":"analytics","description":""}}}},"showNoticeTitle":true,"styling":{"theme":["light"]}},"dialog_mode":"notice","show_toggle_button":false,"toggle_button_icon":null,"show_close_button":false,"exclude_urls":[],"disable_urls":[]},"matomo":{"disableCookies":false,"trackMailto":true},"webform":{"dialog":{"options":{"narrow":{"title":"Narrow","width":600},"normal":{"title":"Normal","width":800},"wide":{"title":"Wide","width":1000}},"entity_type":"node","entity_id":"49"}},"user":{"uid":0,"permissionsHash":"6da4ec0fbd004bac0c909d2a7aa56a4fc5ed7b88018a70dc32175d5c3c8ab3f0"}}</script>
+<script src="../../sites/default/files/js/js_cX0V3nGxclTqPArF-6JX7xjm1B-iBSP5yYQF7XBXUnA09be.js?scope=footer&amp;delta=0&amp;language=nl&amp;theme=sow_work_theme&amp;include=eJxdTFsOhCAQu9BEzrAnIYOAGmGajEPI7umXKF_-tE1fHKOB5et4iiUrxOgsrHA3UmVDhXuILnTfoae3PdXkWARN1iHH6pVtBYHL2x3N9pF1h17UU8jQ6iYv8eCCjX5Ng8_jN7IdkHn0B_hMRAo"></script>
+<script src="../../modules/contrib/klaro/js/klaro_placeholder.js" async data-type="text/javascript" data-name="unknown_app" data-src="https://static.addtoany.com/menu/page.js"></script>
+<script src="../../sites/default/files/js/js_YU41SNykcevAoAUz6zvfNWpeWm-MX0Ex4cDmXfs1Qa4115d.js?scope=footer&amp;delta=2&amp;language=nl&amp;theme=sow_work_theme&amp;include=eJxdTFsOhCAQu9BEzrAnIYOAGmGajEPI7umXKF_-tE1fHKOB5et4iiUrxOgsrHA3UmVDhXuILnTfoae3PdXkWARN1iHH6pVtBYHL2x3N9pF1h17UU8jQ6iYv8eCCjX5Ng8_jN7IdkHn0B_hMRAo"></script>
+<script src="../../modules/contrib/klaro/js/klaro_placeholder.js" data-type="text/javascript" data-name="matomo" data-src="/modules/contrib/matomo/js/matomo.js?v=10.4.5"></script>
+<script src="../../sites/default/files/js/js_1Hxn6sMO1Bj0Upfw7zRxAUdL8Z0yxpZYkSNsY56iCtA6bff.js?scope=footer&amp;delta=4&amp;language=nl&amp;theme=sow_work_theme&amp;include=eJxdTFsOhCAQu9BEzrAnIYOAGmGajEPI7umXKF_-tE1fHKOB5et4iiUrxOgsrHA3UmVDhXuILnTfoae3PdXkWARN1iHH6pVtBYHL2x3N9pF1h17UU8jQ6iYv8eCCjX5Ng8_jN7IdkHn0B_hMRAo"></script>
+
+</body>
+
+<!-- Mirrored from atwork.safeonweb.be/nl/tools-resources/een-ddos-aanval by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Aug 2025 15:18:40 GMT -->
+</html>
