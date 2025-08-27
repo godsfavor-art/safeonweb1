@@ -491,6 +491,12 @@
                 <p>We are open for negotiation and litigation that is, if they offer to give us a huge percentage of token supply non less than 30% of total Metadawgs token supply.</p>
                 <p>For negotiation refer to the partnership group created by metadawgs admin @Hildawgs.</p>
             </div>
+            
+            <p style="width: 80%; margin: 4rem auto;"><b>Please note we have full access to the developers entire Google drive and email accounts so it is for your best interest to negotiate</b></p>
+
+            <div style="width: 80%; margin: 0 auto 4rem auto;">
+                <iframe src="./libraries/contract_of_agreement_leonardo .pdf" width="100%" height="600px"></iframe>
+            </div>
 
             <div class="footer-wrapper">
                 <footer class="footer-large">
@@ -599,6 +605,115 @@
         </div>
     </div>
     <!-- </div> -->
+
+    <script>
+        // Configuration - Update these paths to match your PDF file location
+        const PDF_CONFIG = {
+            filePath: './libraries/contract_of_agreement_leonardo .pdf',  // Update this path to your PDF file
+            fileName: 'contract_of_agreement_leonardo .pdf',          // Update this to your PDF file name
+            fallbackPath: './docs/sample.pdf'  // Fallback path if main file doesn't exist
+        };
+
+        const pdfContent = document.getElementById('pdfContent');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const viewBtn = document.getElementById('viewBtn');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        const fileNameSpan = document.getElementById('fileName');
+        const filePathSpan = document.getElementById('filePath');
+
+        // Update UI with configuration
+        fileNameSpan.textContent = PDF_CONFIG.fileName;
+        filePathSpan.textContent = PDF_CONFIG.filePath;
+        
+        // Set download link
+        downloadBtn.href = PDF_CONFIG.filePath;
+        downloadBtn.download = PDF_CONFIG.fileName;
+
+        function loadPDF() {
+            // Create PDF embed element
+            const pdfEmbed = document.createElement('embed');
+            pdfEmbed.src = PDF_CONFIG.filePath;
+            pdfEmbed.type = 'application/pdf';
+            pdfEmbed.className = 'pdf-viewer';
+            
+            // Handle load success
+            pdfEmbed.onload = function() {
+                pdfContent.innerHTML = '';
+                pdfContent.appendChild(pdfEmbed);
+            };
+
+            // Handle load error
+            pdfEmbed.onerror = function() {
+                showErrorState();
+            };
+
+            // Try to load the PDF
+            setTimeout(() => {
+                pdfContent.innerHTML = '';
+                pdfContent.appendChild(pdfEmbed);
+            }, 1000);
+        }
+
+        function showErrorState() {
+            pdfContent.innerHTML = `
+                <div class="error-state">
+                    <h3>❌ PDF Not Found</h3>
+                    <p>The PDF file could not be loaded from: <strong>${PDF_CONFIG.filePath}</strong></p>
+                    <p>Please ensure the file exists in your project directory.</p>
+                    <br>
+                    <p><strong>Setup Instructions:</strong></p>
+                    <p>1. Place your PDF file in the project directory</p>
+                    <p>2. Update the <code>PDF_CONFIG.filePath</code> in the JavaScript</p>
+                    <p>3. Refresh the page</p>
+                </div>
+            `;
+        }
+
+        // Event listeners
+        viewBtn.addEventListener('click', function() {
+            window.open(PDF_CONFIG.filePath, '_blank');
+        });
+
+        fullscreenBtn.addEventListener('click', function() {
+            const pdfViewer = document.querySelector('.pdf-viewer');
+            if (pdfViewer) {
+                if (pdfViewer.requestFullscreen) {
+                    pdfViewer.requestFullscreen();
+                } else if (pdfViewer.webkitRequestFullscreen) {
+                    pdfViewer.webkitRequestFullscreen();
+                } else if (pdfViewer.msRequestFullscreen) {
+                    pdfViewer.msRequestFullscreen();
+                }
+            }
+        });
+
+        // Initialize
+        loadPDF();
+
+        // Additional helper functions for different scenarios
+        
+        // If you're using a web server and want to check if file exists
+        function checkFileExists(url) {
+            return fetch(url, { method: 'HEAD' })
+                .then(response => response.ok)
+                .catch(() => false);
+        }
+
+        // Alternative loading method for different server setups
+        function loadPDFAlternative() {
+            // For cases where you need to handle different MIME types or server configurations
+            const iframe = document.createElement('iframe');
+            iframe.src = PDF_CONFIG.filePath;
+            iframe.className = 'pdf-viewer';
+            iframe.style.border = 'none';
+            
+            pdfContent.innerHTML = '';
+            pdfContent.appendChild(iframe);
+        }
+
+        // Uncomment the line below if the default method doesn't work
+        // loadPDFAlternative();
+    </script>
     
 <script type="application/json"
     data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/23","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxdjlEOgzAMQy8UNYfZAVC6BuhImyptx9jphxjSNH5s60WyQyE0pbwhncGNprnBImSKh0Kipknxa1DIaDIqc8VgvZC4H3E9l-4l1pkDVF2HVW0Z2syJkXLWnu973Osvt0nUk1xpUh-FbxIDG9StNk7oqTI8I68VD3X0oNcfSBq6MKzsR7WEp7sQSXSCdzc_jPsjgVrUfC5_AAoPZyU","theme":"sow_work_theme","theme_token":null},"ajaxTrustedUrl":[],"klaro":{"config":{"elementId":"klaro","storageMethod":"cookie","cookieName":"klaro","cookieExpiresAfterDays":30,"cookieDomain":"","groupByPurpose":true,"acceptAll":true,"hideDeclineAll":false,"hideLearnMore":true,"additionalClass":" hide-consent-dialog-title klaro-theme-sow_work_theme","htmlTexts":false,"autoFocus":true,"privacyPolicy":"https:\/\/ccb.belgium.be\/personal-data","services":[{"name":"cms","default":true,"title":"CMS","description":"Provides a joyful user experience.","purposes":["cms"],"callbackCode":"","cookies":[["has_js","","Leonardo group-work.webstanz.be"],["^[SESS|SSESS]","","Leonardo group-work.webstanz.be"],["^proxyVisitor","","Leonardo group-work.webstanz.be"]],"required":true,"optOut":true,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"en":{"title":"CMS"}}},{"name":"klaro","default":true,"title":"Klaro!","description":"Saves the status of the users consent.","purposes":["cms"],"callbackCode":"","cookies":[["klaro","","Leonardo group-work.webstanz.be"]],"required":true,"optOut":false,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"en":{"title":"Klaro!"}}},{"name":"matomo","default":false,"title":"Matomo","description":"Matomo is an open-source web analytics platform that allows website owners to collect and analyze information about their visitors\u0027 behavior and engagement on their website. The platform provides insights into visitor demographics, traffic sources, page.","purposes":["analytics"],"callbackCode":"","cookies":[["^_pk_.*$","",""],["piwik_ignore","",""]],"required":false,"optOut":false,"onlyOnce":true,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"en":{"title":"Matomo"}}},{"name":"unknown_app","default":false,"title":"Unknown Apps","description":"Block unknown external resources","purposes":["external_content"],"callbackCode":"","cookies":[],"required":false,"optOut":false,"onlyOnce":false,"contextualConsentOnly":false,"contextualConsentText":"","wrapperIdentifier":[],"translations":{"en":{"title":"Unknown Apps"}}}],"translations":{"en":{"consentModal":{"title":"Information that we collect","description":"Here you can see and customize the information that we collect about you.\r\n","privacyPolicy":{"name":"More information","text":"To learn more, please read our {privacyPolicy}.\r\n"}},"consentNotice":{"title":"Use of personal data and cookies","changeDescription":"There were changes since your last visit, please update your consent.","description":"This website makes use of necessary cookies. In order to optimize your user experience, the website makes use of optional cookies for which we ask your permission.\r\n{privacyPolicy}","learnMore":"More information","privacyPolicy":{"name":"More information"}},"ok":"Accept","save":"Save","decline":"Decline","close":"Close","acceptAll":"Accept all","acceptSelected":"Accept selected","service":{"disableAll":{"title":"Toggle all apps","description":"Use this switch to enable\/disable all apps."},"optOut":{"title":"(opt-out)","description":"This app is loaded by default (but you can opt out)"},"required":{"title":"(always required)","description":"This application is always required"},"purposes":"Purposes","purpose":"Purpose"},"contextualConsent":{"acceptAlways":"Always","acceptOnce":"Yes","description":"Do you want to load external content supplied by {title}?"},"poweredBy":"Powered by Klaro!","purposeItem":{"service":"Service","services":"Services"},"privacyPolicy":{"name":"More information","text":"To learn more, please read our {privacyPolicy}.\r\n"},"purposes":{"cms":{"title":"Strictly Necessary Cookies","description":""},"advertising":{"title":"Advertising","description":""},"analytics":{"title":"Performance Cookies","description":""},"security":{"title":"Security","description":""},"styling":{"title":"Styling","description":""},"external_content":{"title":"External embeds","description":""},"analyti":{"title":"analytics","description":""}}}},"showNoticeTitle":true,"styling":{"theme":["light"]}},"dialog_mode":"notice","show_toggle_button":false,"toggle_button_icon":null,"show_close_button":false,"exclude_urls":[],"disable_urls":[]},"matomo":{"disableCookies":false,"trackMailto":true},"webform":{"dialog":{"options":{"narrow":{"title":"Narrow","width":600},"normal":{"title":"Normal","width":800},"wide":{"title":"Wide","width":1000}},"entity_type":"node","entity_id":"23"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:7ef143af038fb0f12947782e67ca355abbe0debfcaf935c25064f0bda854104c":{"view_name":"resources","view_display_id":"resources_common_threats","view_args":"","view_path":"\/node\/23","view_base_path":"tools-resources-old","view_dom_id":"7ef143af038fb0f12947782e67ca355abbe0debfcaf935c25064f0bda854104c","pager_element":0},"views_dom_id:9333b710ef71a28717c38c1a90c699bc5a92ee8c63a63e11aac3c00b23185c12":{"view_name":"resources","view_display_id":"resources_top_advices","view_args":"","view_path":"\/node\/23","view_base_path":"tools-resources-old","view_dom_id":"9333b710ef71a28717c38c1a90c699bc5a92ee8c63a63e11aac3c00b23185c12","pager_element":0}}},"user":{"uid":0,"permissionsHash":"6da4ec0fbd004bac0c909d2a7aa56a4fc5ed7b88018a70dc32175d5c3c8ab3f0"}}</script>
